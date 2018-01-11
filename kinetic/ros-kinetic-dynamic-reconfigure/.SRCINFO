@@ -1,0 +1,25 @@
+pkgbase = ros-kinetic-dynamic-reconfigure
+	pkgdesc = ROS - This unary stack contains the dynamic_reconfigure package which provides a means to change node parameters at any time without having to restart the node.
+	pkgver = 1.5.48
+	pkgrel = 13
+	url = https://github.com/ros/dynamic_reconfigure
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-roscpp-serialization
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rosservice
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-dynamic-reconfigure-1.5.48-0.tar.gz::https://github.com/ros-gbp/dynamic_reconfigure-release/archive/release/kinetic/dynamic_reconfigure/1.5.48-0.tar.gz
+	sha256sums = 8facb17c091a9cdf552a933a7e7555df0cf1bb5e16be44ac90318a28ae7e3276
+
+pkgname = ros-kinetic-dynamic-reconfigure
+

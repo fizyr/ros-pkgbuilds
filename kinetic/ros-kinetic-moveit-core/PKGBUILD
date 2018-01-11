@@ -1,0 +1,92 @@
+# Script generated with import_catkin_packages.py
+# For more information: https://github.com/bchretien/arch-ros-stacks
+pkgdesc="ROS - Core libraries used by MoveIt!."
+url='https://github.com/ros-planning/moveit'
+
+pkgname='ros-kinetic-moveit-core'
+pkgver='0.9.11'
+_pkgver_patch=0
+arch=('any')
+pkgrel=1
+license=('BSD')
+
+makedepends=(
+	'cmake'
+	'pkg-config'
+	'ros-build-tools'
+	'ros-kinetic-angles'
+	'ros-kinetic-catkin'
+	'ros-kinetic-moveit-resources'
+	'ros-kinetic-orocos-kdl'
+	'ros-kinetic-rosunit'
+	'ros-kinetic-tf-conversions'
+)
+depends=(
+	'assimp'
+	'boost'
+	'boost-libs'
+	'console-bridge'
+	'eigen3'
+	'fcl'
+	'octomap'
+	'ros-kinetic-eigen-conversions'
+	'ros-kinetic-eigen-stl-containers'
+	'ros-kinetic-geometric-shapes'
+	'ros-kinetic-geometry-msgs'
+	'ros-kinetic-kdl-parser'
+	'ros-kinetic-moveit-msgs'
+	'ros-kinetic-octomap-msgs'
+	'ros-kinetic-random-numbers'
+	'ros-kinetic-roslib'
+	'ros-kinetic-rostime'
+	'ros-kinetic-sensor-msgs'
+	'ros-kinetic-shape-msgs'
+	'ros-kinetic-srdfdom'
+	'ros-kinetic-std-msgs'
+	'ros-kinetic-trajectory-msgs'
+	'ros-kinetic-urdf'
+	'ros-kinetic-visualization-msgs'
+	'urdfdom'
+	'urdfdom-headers'
+)
+
+# Git version (e.g. for debugging)
+# _tag=release/kinetic/moveit_core/${pkgver}-${_pkgver_patch}
+# _dir=${pkgname}
+# source=("${_dir}"::"git+https://github.com/ros-gbp/moveit-release.git"#tag=${_tag})
+# sha256sums=('SKIP')
+
+# Tarball version (faster download)
+_dir="moveit-release-release-kinetic-moveit_core-${pkgver}-${_pkgver_patch}"
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/moveit-release/archive/release/kinetic/moveit_core/${pkgver}-${_pkgver_patch}.tar.gz")
+sha256sums=('6cd9d4a1e2838682c6a33311984a5148b1cf74df61cb109a43bed82ffbe0b6ce')
+
+build() {
+	# Use ROS environment variables
+	source /usr/share/ros-build-tools/clear-ros-env.sh
+	[ -f /opt/ros/kinetic/setup.bash ] && source /opt/ros/kinetic/setup.bash
+
+	# Create build directory
+	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+	cd ${srcdir}/build
+
+	# Fix Python2/Python3 conflicts
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 ${srcdir}/${_dir}
+
+	# Build project
+	cmake ${srcdir}/${_dir} \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DCATKIN_BUILD_BINARY_PACKAGE=ON \
+				-DCMAKE_INSTALL_PREFIX=/opt/ros/kinetic \
+				-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+				-DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+				-DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+				-DPYTHON_BASENAME=.cpython-36m \
+				-DSETUPTOOLS_DEB_LAYOUT=OFF
+	make
+}
+
+package() {
+	cd "${srcdir}/build"
+	make DESTDIR="${pkgdir}/" install
+}

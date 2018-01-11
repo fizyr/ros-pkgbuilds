@@ -1,0 +1,40 @@
+# Contributor: Mykola Dolhyi <0xb000@gmail.com>
+pkgname=ignition-math
+pkgver=3.2.0
+pkgrel=3
+pkgdesc="Math classes and functions for robot applications"
+arch=('i686' 'x86_64')
+url="http://ignitionrobotics.org/"
+license=('Apache')
+groups=('development')
+depends=()
+makedepends=('cmake' 'ruby-ronn' 'pkg-config>=0.28')
+optdepends=()
+provides=('ignition-math2')
+conflicts=()
+replaces=('ignition-math2')
+source=("https://bitbucket.org/ignitionrobotics/ign-math/get/${pkgname}3_${pkgver}.tar.bz2")
+sha256sums=('929794ababed10c92d7217973e1d268a9de4a51dae80c401c6d1333ff65f7f89')
+
+_dir="ignitionrobotics-ign-math-e86e5bb392e4"
+
+build() {
+  cd "$srcdir/$_dir"
+
+  mkdir -p build
+  cd build
+
+  # Configure build
+  cmake .. -DCMAKE_BUILD_TYPE="Release" \
+           -DCMAKE_INSTALL_PREFIX="/usr" \
+           -DCMAKE_INSTALL_LIBDIR="lib" \
+           -DENABLE_TESTS_COMPILATION:BOOL=False
+
+  # Compile
+  make
+}
+
+package() {
+  cd "$srcdir/$_dir/build"
+  make DESTDIR="$pkgdir/" install
+}

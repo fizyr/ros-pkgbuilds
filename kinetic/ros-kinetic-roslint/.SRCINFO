@@ -1,0 +1,15 @@
+pkgbase = ros-kinetic-roslint
+	pkgdesc = ROS - CMake lint commands for ROS packages.
+	pkgver = 0.11.0
+	pkgrel = 12
+	url = h
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	source = ros-kinetic-roslint-0.11.0-0.tar.gz::https://github.com/ros-gbp/roslint-release/archive/release/kinetic/roslint/0.11.0-0.tar.gz
+	sha256sums = b08fb487af9e026669d6ee86ebc209974d35b37542f844f40508e2411a3245df
+
+pkgname = ros-kinetic-roslint
+

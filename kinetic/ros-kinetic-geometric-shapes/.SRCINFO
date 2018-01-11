@@ -1,0 +1,29 @@
+pkgbase = ros-kinetic-geometric-shapes
+	pkgdesc = ROS - This package contains generic definitions of geometric shapes and bodies.
+	pkgver = 0.5.3
+	pkgrel = 1
+	url = http://ros.org/wiki/geometric_shapes
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rosunit
+	depends = assimp
+	depends = boost
+	depends = boost-libs
+	depends = console-bridge
+	depends = eigen3
+	depends = octomap
+	depends = pkg-config
+	depends = qhull
+	depends = ros-kinetic-eigen-stl-containers
+	depends = ros-kinetic-random-numbers
+	depends = ros-kinetic-resource-retriever
+	depends = ros-kinetic-shape-msgs
+	depends = ros-kinetic-visualization-msgs
+	source = ros-kinetic-geometric-shapes-0.5.3-1.tar.gz::https://github.com/ros-gbp/geometric_shapes-release/archive/release/kinetic/geometric_shapes/0.5.3-1.tar.gz
+	sha256sums = 6da99e2c74ec9592c4812811c32389e733dfe1f1202fdf1b6ccf8b5d27ae721d
+
+pkgname = ros-kinetic-geometric-shapes
+

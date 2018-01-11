@@ -1,0 +1,32 @@
+# Maintainer: Benjamin Chretien <chretien at lirmm dot fr>
+pkgname=urdfdom-headers
+pkgver=0.4.2
+pkgrel=6
+pkgdesc="The URDF (U-Robot Description Format) headers provides core data structure headers for URDF."
+arch=('any')
+url="http://gazebosim.org/"
+license=('BSD')
+depends=()
+makedepends=('git' 'cmake')
+
+_dir="urdfdom_headers-$pkgver"
+source=("https://github.com/ros/urdfdom_headers/archive/$pkgver.tar.gz")
+sha512sums=('e54019c829a033a9504cfef315a957d45cbdb384fe817dc721ff68cb70e30befb835a6575a5ab870a93ff5503783770cf01e0b5b067ef3decf1dfa3020dc14ea')
+
+build() {
+  # Create build directory
+  [ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+  cd ${srcdir}/build
+
+  # Build project
+  cmake ${srcdir}/${_dir} \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX="/usr" \
+        -DCMAKE_INSTALL_LIBDIR="lib"
+  make
+}
+
+package() {
+  cd ${srcdir}/build
+  make DESTDIR="$pkgdir/" install
+}

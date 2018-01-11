@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-rqt-action
+	pkgdesc = ROS - rqt_action provides a feature to introspect all available ROS action (from actionlib) types.
+	pkgver = 0.4.9
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_action/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-msg
+	depends = ros-kinetic-rqt-py-common
+	source = ros-kinetic-rqt-action-0.4.9-0.tar.gz::https://github.com/ros-gbp/rqt_action-release/archive/release/kinetic/rqt_action/0.4.9-0.tar.gz
+	sha256sums = ccd9349bd5eec39ff064b6d4beb24acac44e1a470ab599b8b508507eeac2d2ef
+
+pkgname = ros-kinetic-rqt-action
+

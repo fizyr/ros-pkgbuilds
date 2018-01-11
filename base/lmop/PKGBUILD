@@ -1,0 +1,20 @@
+# Maintainer: Ronald Ensing <r.ensing at [fizyr] d0t com>
+pkgname=lmop
+pkgver=1.7
+pkgrel=1
+pkgdesc="Open-source header-only command line option parser for C++."
+arch=("i686" "x86_64")
+url="http://optionparser.sourceforge.net/"
+license=("MIT")
+
+source=(
+	"https://downloads.sourceforge.net/project/optionparser/optionparser-1.7.tar.gz"
+	"lmop-config.cmake"
+)
+sha256sums=('b3818c1523bc67d8b0802d7133bdb1c4407b72365f338d96f58a29fe5beeee11'
+            '6947d7f73766e0748acb0a26d4f6f8ec3feeb6dd6c34a402e0e337479f1856f7')
+
+package() {
+	install -D "$srcdir/optionparser-1.7/src/optionparser.h" "${pkgdir}/usr/include/lmop/optionparser.h"
+	install -D "$srcdir/lmop-config.cmake" "${pkgdir}/usr/lib/cmake/lmop/lmop-config.cmake"
+}

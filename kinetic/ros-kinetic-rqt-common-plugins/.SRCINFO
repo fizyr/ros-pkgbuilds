@@ -1,0 +1,36 @@
+pkgbase = ros-kinetic-rqt-common-plugins
+	pkgdesc = ROS - rqt_common_plugins metapackage provides ROS backend graphical tools suite that can be used on/off of robot runtime.
+	pkgver = 0.4.8
+	pkgrel = 23
+	url = https://github.com/ros-visualization/rqt_common_plugins/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-rqt-action
+	depends = ros-kinetic-rqt-bag
+	depends = ros-kinetic-rqt-bag-plugins
+	depends = ros-kinetic-rqt-console
+	depends = ros-kinetic-rqt-dep
+	depends = ros-kinetic-rqt-graph
+	depends = ros-kinetic-rqt-image-view
+	depends = ros-kinetic-rqt-launch
+	depends = ros-kinetic-rqt-logger-level
+	depends = ros-kinetic-rqt-msg
+	depends = ros-kinetic-rqt-plot
+	depends = ros-kinetic-rqt-publisher
+	depends = ros-kinetic-rqt-py-common
+	depends = ros-kinetic-rqt-py-console
+	depends = ros-kinetic-rqt-reconfigure
+	depends = ros-kinetic-rqt-service-caller
+	depends = ros-kinetic-rqt-shell
+	depends = ros-kinetic-rqt-srv
+	depends = ros-kinetic-rqt-top
+	depends = ros-kinetic-rqt-topic
+	depends = ros-kinetic-rqt-web
+	source = ros-kinetic-rqt-common-plugins-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/kinetic/rqt_common_plugins/0.4.8-0.tar.gz
+	sha256sums = a13b1827d40b38442e56d9fda372cc2538828711657ec6db3476878252cba673
+
+pkgname = ros-kinetic-rqt-common-plugins
+

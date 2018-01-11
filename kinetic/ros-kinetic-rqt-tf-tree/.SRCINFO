@@ -1,0 +1,27 @@
+pkgbase = ros-kinetic-rqt-tf-tree
+	pkgdesc = ROS - rqt_tf_tree provides a GUI plugin for visualizing the ROS TF frame tree.
+	pkgver = 0.5.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_tf_tree/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-mock
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-dotgraph
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-graph
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-tf2
+	depends = ros-kinetic-tf2-msgs
+	depends = ros-kinetic-tf2-ros
+	source = ros-kinetic-rqt-tf-tree-0.5.8-0.tar.gz::https://github.com/ros-gbp/rqt_tf_tree-release/archive/release/kinetic/rqt_tf_tree/0.5.8-0.tar.gz
+	sha256sums = 1cf9169781d33f28e1d7e1a76764446813b6dffc772ff20c3645a2f9897dc491
+
+pkgname = ros-kinetic-rqt-tf-tree
+

@@ -1,0 +1,24 @@
+pkgbase = ros-kinetic-rqt-robot-dashboard
+	pkgdesc = ROS - rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
+	pkgver = 0.5.7
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_robot_dashboard/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-diagnostic-msgs
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-gui
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-console
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-nav-view
+	depends = ros-kinetic-rqt-robot-monitor
+	source = ros-kinetic-rqt-robot-dashboard-0.5.7-0.tar.gz::https://github.com/ros-gbp/rqt_robot_dashboard-release/archive/release/kinetic/rqt_robot_dashboard/0.5.7-0.tar.gz
+	sha256sums = 7f52846bd254213b9f245b0be802ff07701f3e57742ca0a13c1ffbeb262116cd
+
+pkgname = ros-kinetic-rqt-robot-dashboard
+

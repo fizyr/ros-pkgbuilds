@@ -1,0 +1,22 @@
+pkgbase = ros-lunar-bondcpp
+	pkgdesc = ROS - C++ implementation of bond, a mechanism for checking when another process has terminated.
+	pkgver = 1.8.1
+	pkgrel = 1
+	url = https://github.com/ros/bond_core
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-lunar-bond
+	depends = ros-lunar-cmake-modules
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-smclib
+	depends = util-linux
+	source = ros-lunar-bondcpp-1.8.1-0.tar.gz::https://github.com/ros-gbp/bond_core-release/archive/release/lunar/bondcpp/1.8.1-0.tar.gz
+	sha256sums = 73d4b020be594afd91233dbffcb1b7934123fce3e648d37d348394cb2a148e74
+
+pkgname = ros-lunar-bondcpp
+

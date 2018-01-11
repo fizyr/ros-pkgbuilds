@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-rostest
+	pkgdesc = ROS - Integration test suite based on roslaunch that is compatible with xUnit frameworks.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rostest
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-rosgraph
+	depends = ros-kinetic-roslaunch
+	depends = ros-kinetic-rosmaster
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rosunit
+	source = ros-kinetic-rostest-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rostest/1.12.12-0.tar.gz
+	sha256sums = 41999c39b8e4d4828251afa8f82d8dd63f0559fc460f2ccffe58a724257dcd6e
+
+pkgname = ros-kinetic-rostest
+

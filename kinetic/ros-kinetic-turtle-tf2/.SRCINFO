@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-turtle-tf2
+	pkgdesc = ROS - turtle_tf2 demonstrates how to write a tf2 broadcaster and listener with the turtlesim.
+	pkgver = 0.2.2
+	pkgrel = 33
+	url = https://github.com/ros/geometry_tutorials/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-std-msgs
+	depends = ros-kinetic-tf2
+	depends = ros-kinetic-tf2-ros
+	depends = ros-kinetic-turtlesim
+	source = ros-kinetic-turtle-tf2-0.2.2-0.tar.gz::https://github.com/ros-gbp/geometry_tutorials-release/archive/release/kinetic/turtle_tf2/0.2.2-0.tar.gz
+	sha256sums = 470185575edd830b92689f8cd433ba62767cfbcb3e7f237bfedb67a419619bbe
+
+pkgname = ros-kinetic-turtle-tf2
+

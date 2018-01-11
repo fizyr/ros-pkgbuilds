@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-qt-dotgraph
+	pkgdesc = ROS - qt_dotgraph provides helpers to work with dot graphs.
+	pkgver = 0.3.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/qt_gui_core/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-pygraphviz
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-pydot
+	depends = ros-kinetic-python-qt-binding
+	source = ros-kinetic-qt-dotgraph-0.3.8-0.tar.gz::https://github.com/ros-gbp/qt_gui_core-release/archive/release/kinetic/qt_dotgraph/0.3.8-0.tar.gz
+	sha256sums = 296249296e92e2f2e8de3369bab782b9ec2efe2d48514145dc83a914f3d08f6b
+
+pkgname = ros-kinetic-qt-dotgraph
+

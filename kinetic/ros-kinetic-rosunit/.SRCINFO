@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-rosunit
+	pkgdesc = ROS - Unit-testing package for ROS.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = https://github.com/ros/ros
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-roslib
+	source = ros-kinetic-rosunit-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosunit/1.13.6-0.tar.gz
+	sha256sums = 15702a1e17f0db1e13ed498234d348ce4dc0446a010ba1951306a0e9e9279444
+
+pkgname = ros-kinetic-rosunit
+

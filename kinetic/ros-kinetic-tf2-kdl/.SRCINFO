@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-tf2-kdl
+	pkgdesc = ROS - KDL binding for tf2.
+	pkgver = 0.5.17
+	pkgrel = 1
+	url = http://ros.org/wiki/tf2
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = eigen3
+	depends = ros-kinetic-cmake-modules
+	depends = ros-kinetic-orocos-kdl
+	depends = ros-kinetic-tf2
+	depends = ros-kinetic-tf2-ros
+	source = ros-kinetic-tf2-kdl-0.5.17-0.tar.gz::https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/tf2_kdl/0.5.17-0.tar.gz
+	sha256sums = d0dc741ed2b5b9eb5878e1fd6d64efdfa98d50f667321f3efa9fe61b7703faef
+
+pkgname = ros-kinetic-tf2-kdl
+

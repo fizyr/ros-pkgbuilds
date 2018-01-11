@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-rqt-image-view
+	pkgdesc = ROS - rqt_image_view provides a GUI plugin for displaying images using image_transport.
+	pkgver = 0.4.11
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_image_view/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-cv-bridge
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-image-transport
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-cpp
+	depends = ros-kinetic-sensor-msgs
+	source = ros-kinetic-rqt-image-view-0.4.11-0.tar.gz::https://github.com/ros-gbp/rqt_image_view-release/archive/release/kinetic/rqt_image_view/0.4.11-0.tar.gz
+	sha256sums = d4d853d20fbd9730ea2212eaa1462bb63e2087d6ba7a85d3e4c5a8a3ef539db9
+
+pkgname = ros-kinetic-rqt-image-view
+

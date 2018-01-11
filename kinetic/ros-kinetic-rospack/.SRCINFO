@@ -1,0 +1,24 @@
+pkgbase = ros-kinetic-rospack
+	pkgdesc = ROS - ROS Package Tool.
+	pkgver = 2.4.3
+	pkgrel = 1
+	url = https://github.com/ros/rospack
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-coverage
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost-libs
+	depends = gtest
+	depends = pkg-config
+	depends = python
+	depends = python-catkin-pkg
+	depends = python-rosdep
+	depends = ros-kinetic-cmake-modules
+	depends = tinyxml2
+	source = ros-kinetic-rospack-2.4.3-0.tar.gz::https://github.com/ros-gbp/rospack-release/archive/release/lunar/rospack/2.4.3-0.tar.gz
+	sha256sums = c1dca972942e40ffa58018f10dec25a8e33371dfd6350da2485e80fb02bf7046
+
+pkgname = ros-kinetic-rospack
+

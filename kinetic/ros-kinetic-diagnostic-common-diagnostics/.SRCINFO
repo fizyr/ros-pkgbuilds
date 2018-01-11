@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-diagnostic-common-diagnostics
+	pkgdesc = ROS - diagnostic_common_diagnostics.
+	pkgver = 1.9.2
+	pkgrel = 17
+	url = http://ros.org/wiki/diagnostic_common_diagnostics
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = hddtemp
+	depends = python-psutil
+	depends = ros-kinetic-diagnostic-updater
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-tf
+	source = ros-kinetic-diagnostic-common-diagnostics-1.9.2-0.tar.gz::https://github.com/ros-gbp/diagnostics-release/archive/release/kinetic/diagnostic_common_diagnostics/1.9.2-0.tar.gz
+	sha256sums = ea32a5a90abfd811db54a6880333597d93d7c568aa0fa818b38981ae2daea90f
+
+pkgname = ros-kinetic-diagnostic-common-diagnostics
+

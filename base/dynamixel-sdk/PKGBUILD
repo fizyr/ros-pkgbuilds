@@ -1,0 +1,49 @@
+# Maintainer: Maarten de Vries <maarten@de-vri.es>
+pkgname=dynamixel-sdk
+pkgver=3.4.5.dr1
+pkgrel=1
+pkgdesc="SDK for communicating with Dynamixel motors (C and C++ bindings)"
+url="https://github.com/ROBOTIS-GIT/DynamixelSDK"
+arch=(x86_64 i386)
+license=(BSD)
+
+source=("https://github.com/delftrobotics-forks/DynamixelSDK/archive/${pkgver}.tar.gz")
+sha512sums=('4e5b25698fde970e4329768302667fa4caf01c816df24f2363d7acfb13ad8dc14923dbfefece57b14bd8111519368a739106f895a10e6b87abbb176049ae630a')
+
+_dir="DynamixelSDK-$pkgver"
+if [[ $CARCH == i386 ]]; then
+	_cxxdir="$_dir/c++/build/linux32"
+	_cdir="$_dir/c/build/linux32"
+	_libsuffix="x86"
+else
+	_cxxdir="$_dir/c++/build/linux64"
+	_cdir="$_dir/c/build/linux64"
+	_libsuffix="x64"
+fi
+
+build() {
+	make -C "$_cxxdir"
+	make -C "$_cdir"
+}
+
+package() {
+	# C++ library
+	install -m755 -Dt "$pkgdir/usr/lib" "$srcdir/$_cxxdir/libdxl_${_libsuffix}_cpp.so.2.0.0"
+	ln -s "libdxl_${_libsuffix}_cpp.so.2.0.0" "$pkgdir/usr/lib/libdxl_${_libsuffix}_cpp.so.2.0"
+	ln -s "libdxl_${_libsuffix}_cpp.so.2.0.0" "$pkgdir/usr/lib/libdxl_${_libsuffix}_cpp.so.2"
+	ln -s "libdxl_${_libsuffix}_cpp.so.2.0.0" "$pkgdir/usr/lib/libdxl_${_libsuffix}_cpp.so"
+
+	# C library
+	install -m755 -Dt "$pkgdir/usr/lib" "$srcdir/$_cdir/libdxl_${_libsuffix}_c.so.2.0.0"
+	ln -s "libdxl_${_libsuffix}_c.so.2.0.0" "$pkgdir/usr/lib/libdxl_${_libsuffix}_c.so.2.0"
+	ln -s "libdxl_${_libsuffix}_c.so.2.0.0" "$pkgdir/usr/lib/libdxl_${_libsuffix}_c.so.2"
+	ln -s "libdxl_${_libsuffix}_c.so.2.0.0" "$pkgdir/usr/lib/libdxl_${_libsuffix}_c.so"
+
+	# Includes
+	install -m755 -d "$pkgdir/usr/include"
+	cp -r "$srcdir/$_cdir/../../include"   "$pkgdir/usr/include/dynamixel_sdk_c"
+	cp -r "$srcdir/$_cxxdir/../../include" "$pkgdir/usr/include/dynamixel_sdk_cpp"
+
+	# License
+	install -m644 -Dt "$pkgdir/usr/share/licenses/$pkgname" "$srcdir/$_dir/LICENSE"
+}

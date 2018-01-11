@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-roscpp-core
+	pkgdesc = ROS - Underlying data libraries for roscpp messages.
+	pkgver = 0.6.7
+	pkgrel = 1
+	url = http://www.ros.org/wiki/roscpp_core
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-cpp-common
+	depends = ros-kinetic-roscpp-serialization
+	depends = ros-kinetic-roscpp-traits
+	depends = ros-kinetic-rostime
+	source = ros-kinetic-roscpp-core-0.6.7-0.tar.gz::https://github.com/ros-gbp/roscpp_core-release/archive/release/kinetic/roscpp_core/0.6.7-0.tar.gz
+	sha256sums = 0144eeed8699d1ea6b09b3f86681c390297f0ddc3c8f0b05a4e0bb53f9da8b80
+
+pkgname = ros-kinetic-roscpp-core
+

@@ -1,0 +1,16 @@
+pkgbase = ros-kinetic-genmsg
+	pkgdesc = ROS - Standalone Python library for generating ROS message and service data structures for various languages.
+	pkgver = 0.5.9
+	pkgrel = 1
+	url = https://github.com/ros/genmsg
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-catkin
+	source = ros-kinetic-genmsg-0.5.9-0.tar.gz::https://github.com/ros-gbp/genmsg-release/archive/release/kinetic/genmsg/0.5.9-0.tar.gz
+	sha256sums = 4e135c1c4d2ec611cb3efd0543a773833667968ea487a1251b0b606518805f73
+
+pkgname = ros-kinetic-genmsg
+

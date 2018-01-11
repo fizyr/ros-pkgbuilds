@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-roscpp-serialization
+	pkgdesc = ROS - roscpp_serialization contains the code for serialization as described in MessagesSerializationAndAdaptingTypes.
+	pkgver = 0.6.7
+	pkgrel = 1
+	url = http://ros.org/wiki/roscpp_serialization
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-cpp-common
+	depends = ros-kinetic-roscpp-traits
+	depends = ros-kinetic-rostime
+	source = ros-kinetic-roscpp-serialization-0.6.7-0.tar.gz::https://github.com/ros-gbp/roscpp_core-release/archive/release/kinetic/roscpp_serialization/0.6.7-0.tar.gz
+	sha256sums = 64751afc51f5a2f9264fc7986c70a3f02cd970ef0c31cf1f466926fe229fe06a
+
+pkgname = ros-kinetic-roscpp-serialization
+

@@ -1,0 +1,23 @@
+pkgbase = ros-kinetic-rqt-dep
+	pkgdesc = ROS - rqt_dep provides a GUI plugin for visualizing the ROS dependency graph.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_dep/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-mock
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-dotgraph
+	depends = ros-kinetic-qt-gui
+	depends = ros-kinetic-qt-gui-py-common
+	depends = ros-kinetic-rqt-graph
+	depends = ros-kinetic-rqt-gui-py
+	source = ros-kinetic-rqt-dep-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_dep-release/archive/release/kinetic/rqt_dep/0.4.8-0.tar.gz
+	sha256sums = 429a10cabbf859bcc0463e80196b706e7736dfeb9e4472fd32bd87fea3d45d94
+
+pkgname = ros-kinetic-rqt-dep
+

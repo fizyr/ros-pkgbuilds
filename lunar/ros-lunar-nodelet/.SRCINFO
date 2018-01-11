@@ -1,0 +1,27 @@
+pkgbase = ros-lunar-nodelet
+	pkgdesc = ROS - The nodelet package is designed to provide a way to run multiple algorithms in the same process with zero copy transport between algorithms.
+	pkgver = 1.9.14
+	pkgrel = 1
+	url = https://github.com/ros/nodelet_core
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-lunar-bondcpp
+	depends = ros-lunar-cmake-modules
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-pluginlib
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-rospy
+	depends = ros-lunar-std-msgs
+	depends = util-linux
+	source = ros-lunar-nodelet-1.9.14-0.tar.gz::https://github.com/ros-gbp/nodelet_core-release/archive/release/lunar/nodelet/1.9.14-0.tar.gz
+	sha256sums = 2e33f0e4f3eca5affab08c6c7ee240071e0133516870b9137ac164a4f883d121
+
+pkgname = ros-lunar-nodelet
+

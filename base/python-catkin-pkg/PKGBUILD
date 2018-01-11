@@ -1,0 +1,77 @@
+pkgname=(python-catkin-pkg python-catkin-pkg-modules python2-catkin-pkg python2-catkin-pkg-modules)
+pkgver=0.3.5
+pkgrel=2
+license=('BSD')
+arch=('any')
+pkgdesc="Standalone Python library for the catkin build system"
+url="http://wiki.ros.org/catkin_pkg"
+
+makedepends=('ros-build-tools' 'python-setuptools' 'python2-setuptools')
+
+_name='catkin_pkg'
+_commit="7e9e77eec26271d25dd2015f787a7a6dfae36f0e"
+source=("$pkgname-$pkgver.tar.gz::https://github.com/ros-infrastructure/catkin_pkg/archive/$pkgver.tar.gz")
+sha256sums=('bc9f45bdc36ec251d04049fff6501c13e16fbe2913b1abd211cecf9b6499477f')
+
+_dir="catkin_pkg-$pkgver"
+
+prepare() {
+	rm -rf python python2
+	cp -aL "$_dir" python
+	cp -aL "$_dir" python2
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 2 python
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 2 python2
+}
+
+build() {
+	cd "$srcdir/python"  && python  setup.py build
+	cd "$srcdir/python2" && python2 setup.py build
+}
+
+_package_tools() {
+	local python="$1"
+	cd "$srcdir/$python"
+	SKIP_PYTHON_MODULES=1 $python setup.py install --prefix='/usr' --root="$pkgdir" --optimize=1
+	install -Dm 644 "$srcdir/$python/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+_package_modules() {
+	local python="$1"
+	cd "$srcdir/$python"
+	SKIP_PYTHON_SCRIPTS=1 $python setup.py install --prefix='/usr' --root="$pkgdir" --optimize=1
+	install -Dm 644 "$srcdir/$python/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+package_python-catkin-pkg() {
+	depends=($pkgname-modules)
+	provides=(caktin-pkg)
+	conflicts=(caktin-pkg)
+	_package_tools python
+}
+
+package_python2-catkin-pkg() {
+	depends=($pkgname-modules)
+	provides=(caktin-pkg)
+	conflicts=(caktin-pkg)
+	_package_tools python2
+}
+
+package_python-catkin-pkg-modules() {
+	depends=(
+		python
+		python-argparse
+		python-dateutil
+		python-docutils
+	)
+	_package_modules python
+}
+
+package_python2-catkin-pkg-modules() {
+	depends=(
+		python2
+		python2-argparse
+		python2-dateutil
+		python2-docutils
+	)
+	_package_modules python2
+}

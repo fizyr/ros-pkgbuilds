@@ -1,0 +1,31 @@
+# Maintainer: Maarten de Vries <maarten@de-vri.es>
+
+pkgname=docopt-cpp
+pkgver=0.6.2
+pkgrel=1
+pkgdesc="C++11 port of docopt"
+arch=('i686' 'x86_64')
+url="https://github.com/docopt/docopt.cpp/"
+license=('MIT')
+makedepends=('cmake')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/docopt/docopt.cpp/archive/v$pkgver.tar.gz")
+sha512sums=('63b145d47032ecbfcc50378a6ff327a0095f84af5e6793fce45a17fa0f6af961135edd436ad7e67192dba5bd2a70f1510f442ce2151460a9bf0e50da53c1ce52')
+
+prepare() {
+	rm -rf "$srcdir/build"
+	mkdir -p "$srcdir/build"
+	cd "$srcdir/build"
+	cmake "../docopt.cpp-$pkgver" \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib
+}
+
+build() {
+	make -C "$srcdir/build"
+}
+
+package() {
+	make -C "$srcdir/build" DESTDIR="$pkgdir" install
+	install -Dm644 "$srcdir/docopt.cpp-$pkgver/LICENSE-MIT" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

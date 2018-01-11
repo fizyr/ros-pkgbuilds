@@ -1,0 +1,83 @@
+pkgname=(python-rosdep python-rosdep-modules python2-rosdep python2-rosdep-modules)
+pkgver=0.11.4.arch2
+pkgrel=9
+pkgdesc="Package manager abstraction tool for ROS."
+url="http://wiki.ros.org/rosdep"
+arch=('any')
+license=('BSD')
+makedepends=(ros-build-tools python-setuptools python2-setuptools)
+
+_commit='d27c193c6fb0472a6820983001333588e6545524'
+source=("$pkgname-$pkgver.tar.gz::https://github.com/ros-infrastructure/rosdep/archive/${_commit}.tar.gz")
+sha256sums=('dad8b03cc049e347db4d8e9dfc3b12846bf401042c85f91c11a22136d791dfd1')
+
+_dir="rosdep-$_commit"
+
+prepare() {
+	rm -rf python python2
+	cp -aL "$_dir" python
+	cp -aL "$_dir" python2
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 python
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 2 python2
+}
+
+build() {
+	cd "$srcdir/python"  && python  setup.py build
+	cd "$srcdir/python2" && python2 setup.py build
+}
+
+_package_tools() {
+	local python="$1"
+	cd "$srcdir/$python"
+	SKIP_PYTHON_MODULES=1 $python setup.py install --prefix='/usr' --root="$pkgdir" --optimize=1
+	install -Dm 644 "$srcdir/$python/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+	rm -r "$pkgdir/usr/lib"
+}
+
+_package_modules() {
+	local python="$1"
+	cd "$srcdir/$python"
+	SKIP_PYTHON_SCRIPTS=1 $python setup.py install --prefix='/usr' --root="$pkgdir" --optimize=1
+	install -Dm 644 "$srcdir/$python/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+	rm -r "$pkgdir/usr/bin"
+}
+
+package_python-rosdep() {
+	depends=($pkgname-modules)
+	provides=(rosdep)
+	conflicts=(rosdep)
+
+	_package_tools python
+}
+
+package_python2-rosdep() {
+	depends=($pkgname-modules)
+	provides=(rosdep)
+	conflicts=(rosdep)
+
+	_package_tools python2
+}
+
+package_python-rosdep-modules() {
+	depends=(
+		python
+		python-catkin-pkg-modules
+		python-rospkg-modules
+		python-rosdistro-modules
+		python-yaml
+	)
+
+	_package_modules python
+}
+
+package_python2-rosdep-modules() {
+	depends=(
+		python2
+		python2-catkin-pkg-modules
+		python2-rospkg-modules
+		python2-rosdistro-modules
+		python2-yaml
+	)
+
+	_package_modules python2
+}

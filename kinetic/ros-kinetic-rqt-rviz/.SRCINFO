@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-rqt-rviz
+	pkgdesc = ROS - rqt_rviz provides a GUI plugin embedding RViz.
+	pkgver = 0.5.7
+	pkgrel = 23
+	url = https://github.com/ros-visualization/rqt_rviz/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = ros-kinetic-pluginlib
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-cpp
+	depends = ros-kinetic-rviz
+	source = ros-kinetic-rqt-rviz-0.5.7-0.tar.gz::https://github.com/ros-gbp/rqt_rviz-release/archive/release/kinetic/rqt_rviz/0.5.7-0.tar.gz
+	sha256sums = aaf1ddda00793c263c954535a7d4c6f4d75b2f8ab50d573952c4448b5bf9c73c
+
+pkgname = ros-kinetic-rqt-rviz
+

@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-orocos-kdl
+	pkgdesc = ROS - This package contains a recent version of the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project.
+	pkgver = 1.3.1
+	pkgrel = 10
+	url = http://wiki.ros.org/orocos_kdl
+	arch = any
+	license = LGPL
+	makedepends = cmake
+	makedepends = cppunit
+	makedepends = ros-build-tools
+	depends = eigen3
+	depends = pkg-config
+	depends = ros-kinetic-catkin
+	source = ros-kinetic-orocos-kdl-1.3.1-0.tar.gz::https://github.com/smits/orocos-kdl-release/archive/release/kinetic/orocos_kdl/1.3.1-0.tar.gz
+	sha256sums = 7cbda0a837a7025739715ffab17b5f916d671eec8dfeb26a20ba80bfc0463590
+
+pkgname = ros-kinetic-orocos-kdl
+

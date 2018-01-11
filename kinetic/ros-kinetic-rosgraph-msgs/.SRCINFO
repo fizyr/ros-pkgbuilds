@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-rosgraph-msgs
+	pkgdesc = ROS - Messages relating to the ROS Computation Graph.
+	pkgver = 1.11.2
+	pkgrel = 24
+	url = h
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-std-msgs
+	makedepends = ros-kinetic-message-generation
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-std-msgs
+	depends = ros-kinetic-message-runtime
+	source = ros-kinetic-rosgraph-msgs-1.11.2-0.tar.gz::https://github.com/ros-gbp/ros_comm_msgs-release/archive/release/kinetic/rosgraph_msgs/1.11.2-0.tar.gz
+	sha256sums = c2f1c73750c45998279607f10a57c4bb75839e1872fbbc831acd7ea06c49aa9f
+
+pkgname = ros-kinetic-rosgraph-msgs
+

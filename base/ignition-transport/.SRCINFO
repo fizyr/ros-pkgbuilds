@@ -1,0 +1,24 @@
+pkgbase = ignition-transport
+	pkgdesc = The transport library combines ZeroMQ with Protobufs to create a fast and efficient message passing system
+	pkgver = 3.0.1
+	pkgrel = 7
+	url = http://ignitionrobotics.org
+	arch = i686
+	arch = x86_64
+	groups = development
+	license = Apache
+	makedepends = cmake
+	makedepends = ruby-ronn
+	makedepends = pkg-config>=0.28
+	makedepends = doxygen
+	depends = protobuf
+	depends = protobuf-c
+	depends = zeromq
+	depends = uuid
+	depends = ignition-msgs
+	depends = ignition-tools
+	source = https://bitbucket.org/ignitionrobotics/ign-transport/get/ignition-transport3_3.0.1.tar.bz2
+	md5sums = faf7298ec251e939b1bf446a3922b29c
+
+pkgname = ignition-transport
+

@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-octomap-msgs
+	pkgdesc = ROS - This package provides messages and serializations / conversion for the OctoMap library.
+	pkgver = 0.3.3
+	pkgrel = 19
+	url = https://github.com/OctoMap/octomap_msgs/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-octomap-msgs-0.3.3-0.tar.gz::https://github.com/ros-gbp/octomap_msgs-release/archive/release/kinetic/octomap_msgs/0.3.3-0.tar.gz
+	sha256sums = 180382de6115d1c1afc3a009ee35804fe49795d2cd36c67418c68542d3b6f4c1
+
+pkgname = ros-kinetic-octomap-msgs
+

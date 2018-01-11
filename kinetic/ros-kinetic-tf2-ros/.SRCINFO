@@ -1,0 +1,28 @@
+pkgbase = ros-kinetic-tf2-ros
+	pkgdesc = ROS - This package contains the ROS bindings for the tf2 library, for both Python and C++.
+	pkgver = 0.5.17
+	pkgrel = 1
+	url = http://www.ros.org/wiki/tf2_ros
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = ros-kinetic-actionlib
+	depends = ros-kinetic-actionlib-msgs
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-filters
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rosgraph
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-std-msgs
+	depends = ros-kinetic-tf2
+	depends = ros-kinetic-tf2-msgs
+	depends = ros-kinetic-tf2-py
+	depends = ros-kinetic-xmlrpcpp
+	source = ros-kinetic-tf2-ros-0.5.17-0.tar.gz::https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/tf2_ros/0.5.17-0.tar.gz
+	sha256sums = 7b79a58f519a9f9d1eca617f62b7cebadf3e32f565f64b9684383b0506e0bee5
+
+pkgname = ros-kinetic-tf2-ros
+

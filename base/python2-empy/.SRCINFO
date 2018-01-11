@@ -1,0 +1,15 @@
+pkgbase = python2-empy
+	pkgdesc = A powerful and robust templating system for Python.
+	pkgver = 3.3.2
+	pkgrel = 9
+	url = http://www.alcyone.com/software/empy
+	arch = any
+	license = LGPL
+	depends = python2>=2.4
+	source = https://pypi.python.org/packages/source/E/EmPy/empy-3.3.2.tar.gz
+	source = python2.patch
+	md5sums = fbb34761cdf9acc4c65e298c9eced395
+	md5sums = 198d743409b18c0d024851ca80829a1d
+
+pkgname = python2-empy
+

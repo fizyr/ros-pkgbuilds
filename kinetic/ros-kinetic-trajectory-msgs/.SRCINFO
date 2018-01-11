@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-trajectory-msgs
+	pkgdesc = ROS - This package defines messages for defining robot trajectories.
+	pkgver = 1.12.5
+	pkgrel = 18
+	url = http://wiki.ros.org/trajectory_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-rosbag-migration-rule
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-trajectory-msgs-1.12.5-0.tar.gz::https://github.com/ros-gbp/common_msgs-release/archive/release/kinetic/trajectory_msgs/1.12.5-0.tar.gz
+	sha256sums = 77bd10ccb752011c27c31647a847432616ff3be60e334ff8f4e1dbaaed3cdc20
+
+pkgname = ros-kinetic-trajectory-msgs
+

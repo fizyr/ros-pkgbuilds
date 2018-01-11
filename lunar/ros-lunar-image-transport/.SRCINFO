@@ -1,0 +1,21 @@
+pkgbase = ros-lunar-image-transport
+	pkgdesc = ROS - image_transport should always be used to subscribe to and publish images.
+	pkgver = 1.11.13
+	pkgrel = 1
+	url = https://github.com/ros-perception/image_common
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-message-filters
+	depends = ros-lunar-pluginlib
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-roslib
+	depends = ros-lunar-sensor-msgs
+	source = ros-lunar-image-transport-1.11.13-0.tar.gz::https://github.com/ros-gbp/image_common-release/archive/release/lunar/image_transport/1.11.13-0.tar.gz
+	sha256sums = 4e8e501fc16ce319691fa5334da79c6a15df2275b18809deabd8379a3a152064
+
+pkgname = ros-lunar-image-transport
+

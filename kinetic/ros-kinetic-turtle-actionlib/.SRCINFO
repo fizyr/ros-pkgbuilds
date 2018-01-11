@@ -1,0 +1,25 @@
+pkgbase = ros-kinetic-turtle-actionlib
+	pkgdesc = ROS - turtle_actionlib demonstrates how to write an action server and client with the turtlesim.
+	pkgver = 0.1.10
+	pkgrel = 23
+	url = https://github.com/ros/common_tutorials/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-actionlib
+	depends = ros-kinetic-actionlib-msgs
+	depends = ros-kinetic-angles
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-std-msgs
+	depends = ros-kinetic-turtlesim
+	source = ros-kinetic-turtle-actionlib-0.1.10-0.tar.gz::https://github.com/ros-gbp/common_tutorials-release/archive/release/kinetic/turtle_actionlib/0.1.10-0.tar.gz
+	sha256sums = 5ec375f3e1c2041fe01e5aede68707d17aa23c97c8e0648469be7f25b2c7c953
+
+pkgname = ros-kinetic-turtle-actionlib
+

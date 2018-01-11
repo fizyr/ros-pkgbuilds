@@ -1,0 +1,25 @@
+pkgbase = ros-lunar-moveit-msgs
+	pkgdesc = ROS - Messages, services and actions used by MoveIt.
+	pkgver = 0.9.1
+	pkgrel = 1
+	url = https://github.com/ros-planning/moveit_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-actionlib-msgs
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-object-recognition-msgs
+	depends = ros-lunar-octomap-msgs
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-shape-msgs
+	depends = ros-lunar-std-msgs
+	depends = ros-lunar-trajectory-msgs
+	source = ros-lunar-moveit-msgs-0.9.1-0.tar.gz::https://github.com/ros-gbp/moveit_msgs-release/archive/release/lunar/moveit_msgs/0.9.1-0.tar.gz
+	sha256sums = fe34a6b249503009b23fd79a5e129edac6b0580d218751854b9b11ca909765e5
+
+pkgname = ros-lunar-moveit-msgs
+

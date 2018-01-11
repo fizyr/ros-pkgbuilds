@@ -1,0 +1,27 @@
+pkgbase = ros-kinetic-roscpp
+	pkgdesc = ROS - roscpp is a C++ implementation of ROS.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/roscpp
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = pkg-config
+	depends = ros-kinetic-cpp-common
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-roscpp-serialization
+	depends = ros-kinetic-roscpp-traits
+	depends = ros-kinetic-rosgraph-msgs
+	depends = ros-kinetic-roslang
+	depends = ros-kinetic-rostime
+	depends = ros-kinetic-std-msgs
+	depends = ros-kinetic-xmlrpcpp
+	source = ros-kinetic-roscpp-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/roscpp/1.12.12-0.tar.gz
+	sha256sums = b59e5f86761ac4b85c8305f0904a6be5c83b7d9afc27c507c724cd0b6e6d4811
+
+pkgname = ros-kinetic-roscpp
+

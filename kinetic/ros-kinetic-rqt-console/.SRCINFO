@@ -1,0 +1,23 @@
+pkgbase = ros-kinetic-rqt-console
+	pkgdesc = ROS - rqt_console provides a GUI plugin for displaying and filtering ROS messages.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_console/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-logger-level
+	depends = ros-kinetic-rqt-py-common
+	source = ros-kinetic-rqt-console-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_console-release/archive/release/kinetic/rqt_console/0.4.8-0.tar.gz
+	sha256sums = 5c1685fb32ec44daadfabf5ac6c0a7423694b7ebe8256ce05556fde892dbf47c
+
+pkgname = ros-kinetic-rqt-console
+

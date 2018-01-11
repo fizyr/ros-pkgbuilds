@@ -1,0 +1,25 @@
+pkgbase = ros-kinetic-stereo-image-proc
+	pkgdesc = ROS - Stereo and single image rectification and disparity processing.
+	pkgver = 1.12.22
+	pkgrel = 1
+	url = http://www.ros.org/wiki/stereo_image_proc
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = ros-kinetic-cv-bridge
+	depends = ros-kinetic-dynamic-reconfigure
+	depends = ros-kinetic-image-geometry
+	depends = ros-kinetic-image-proc
+	depends = ros-kinetic-image-transport
+	depends = ros-kinetic-message-filters
+	depends = ros-kinetic-nodelet
+	depends = ros-kinetic-sensor-msgs
+	depends = ros-kinetic-stereo-msgs
+	source = ros-kinetic-stereo-image-proc-1.12.22-0.tar.gz::https://github.com/ros-gbp/image_pipeline-release/archive/release/kinetic/stereo_image_proc/1.12.22-0.tar.gz
+	sha256sums = 88e96ac6cdd3156014df8f5d3f4e60c691c190ef238603983b5d1b718567dd30
+
+pkgname = ros-kinetic-stereo-image-proc
+

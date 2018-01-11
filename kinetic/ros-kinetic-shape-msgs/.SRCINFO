@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-shape-msgs
+	pkgdesc = ROS - This package contains messages for defining shapes, such as simple solid object primitives (cube, sphere, etc), planes, and meshes.
+	pkgver = 1.12.5
+	pkgrel = 18
+	url = http://wiki.ros.org/shape_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-shape-msgs-1.12.5-0.tar.gz::https://github.com/ros-gbp/common_msgs-release/archive/release/kinetic/shape_msgs/1.12.5-0.tar.gz
+	sha256sums = 7b99a6ef507932b0a9e9acb73925313539563081c26e90754c9d95c39b12507c
+
+pkgname = ros-kinetic-shape-msgs
+

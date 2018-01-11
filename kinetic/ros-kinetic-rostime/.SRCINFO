@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-rostime
+	pkgdesc = ROS - Time and Duration implementations for C++ libraries, including roscpp.
+	pkgver = 0.6.7
+	pkgrel = 1
+	url = http://ros.org/wiki/rostime
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-cpp-common
+	source = ros-kinetic-rostime-0.6.7-0.tar.gz::https://github.com/ros-gbp/roscpp_core-release/archive/release/kinetic/rostime/0.6.7-0.tar.gz
+	sha256sums = 41ba058b54d4cc0d7e5ba28b944c417adf56e108a7ad08b11d83fba1e75aeb27
+
+pkgname = ros-kinetic-rostime
+

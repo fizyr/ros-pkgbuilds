@@ -1,0 +1,22 @@
+pkgbase = ros-lunar-pluginlib
+	pkgdesc = ROS - The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure.
+	pkgver = 1.11.2
+	pkgrel = 1
+	url = https://github.com/ros/pluginlib
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-lunar-class-loader
+	depends = ros-lunar-cmake-modules
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roslib
+	depends = tinyxml2
+	source = ros-lunar-pluginlib-1.11.2-0.tar.gz::https://github.com/ros-gbp/pluginlib-release/archive/release/lunar/pluginlib/1.11.2-0.tar.gz
+	sha256sums = 5e3deb4f797d22a9e01b937d54cb0f03596788a2559e2c3b7c1495e0069b495a
+
+pkgname = ros-lunar-pluginlib
+

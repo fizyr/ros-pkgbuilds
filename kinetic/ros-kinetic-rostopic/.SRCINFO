@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-rostopic
+	pkgdesc = ROS - rostopic contains the rostopic command-line tool for displaying debug information about ROS Topics, including publishers, subscribers, publishing rate, and ROS Messages.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rostopic
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-genpy
+	depends = ros-kinetic-rosbag
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rostest
+	source = ros-kinetic-rostopic-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rostopic/1.12.12-0.tar.gz
+	sha256sums = 181d58a9230fef46361042f1686748ca2351b308c07af6485a3c263e350c6769
+
+pkgname = ros-kinetic-rostopic
+

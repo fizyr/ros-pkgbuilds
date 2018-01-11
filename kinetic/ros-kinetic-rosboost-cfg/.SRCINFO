@@ -1,0 +1,15 @@
+pkgbase = ros-kinetic-rosboost-cfg
+	pkgdesc = ROS - Contains scripts used by the rosboost-cfg tool for determining cflags/lflags/etc.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://ros.org/wiki/rosboost_cfg
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	source = ros-kinetic-rosboost-cfg-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosboost_cfg/1.13.6-0.tar.gz
+	sha256sums = 3495fc265943ecdff11fb5cd50c166f235f24a9f6b79794e30677a5c7ee2ad14
+
+pkgname = ros-kinetic-rosboost-cfg
+

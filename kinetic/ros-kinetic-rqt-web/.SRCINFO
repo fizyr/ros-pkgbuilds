@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-rqt-web
+	pkgdesc = ROS - rqt_web is a simple web content viewer for rqt.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_web/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-pyqt5
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-gui
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	source = ros-kinetic-rqt-web-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_web-release/archive/release/kinetic/rqt_web/0.4.8-0.tar.gz
+	sha256sums = 106888a84f50f1d5adf2e80db7a0e91548f95feab02bc8c90b13cccbe634046d
+
+pkgname = ros-kinetic-rqt-web
+

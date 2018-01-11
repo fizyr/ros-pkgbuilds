@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-qt-gui-py-common
+	pkgdesc = ROS - qt_gui_py_common provides common functionality for GUI plugins written in Python.
+	pkgver = 0.3.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/qt_gui_core/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	source = ros-kinetic-qt-gui-py-common-0.3.8-0.tar.gz::https://github.com/ros-gbp/qt_gui_core-release/archive/release/kinetic/qt_gui_py_common/0.3.8-0.tar.gz
+	sha256sums = b7dfc4dcfce5fee240c1c0a7e8c6f5c12a07c2c36d49b578bce40f0d11efab15
+
+pkgname = ros-kinetic-qt-gui-py-common
+

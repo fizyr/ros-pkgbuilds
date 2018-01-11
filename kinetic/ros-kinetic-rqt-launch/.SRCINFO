@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-rqt-launch
+	pkgdesc = ROS - This rqt plugin ROS package provides easy view of .launch files.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_launch/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-roslaunch
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-console
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-py-common
+	source = ros-kinetic-rqt-launch-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_launch-release/archive/release/kinetic/rqt_launch/0.4.8-0.tar.gz
+	sha256sums = 4d52dc7d995ffe9e219c30f3c85ad15ed33ef5f7b87e216d48175da77302a242
+
+pkgname = ros-kinetic-rqt-launch
+

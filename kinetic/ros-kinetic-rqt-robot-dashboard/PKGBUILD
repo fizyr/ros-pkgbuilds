@@ -1,0 +1,69 @@
+# Script generated with import_catkin_packages.py
+# For more information: https://github.com/bchretien/arch-ros-stacks
+pkgdesc="ROS - rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt."
+url='https://github.com/ros-visualization/rqt_robot_dashboard/issues'
+
+pkgname='ros-kinetic-rqt-robot-dashboard'
+pkgver='0.5.7'
+_pkgver_patch=0
+arch=('any')
+pkgrel=16
+license=('BSD')
+
+makedepends=(
+	'cmake'
+	'ros-build-tools'
+	'ros-kinetic-catkin'
+)
+depends=(
+	'ros-kinetic-diagnostic-msgs'
+	'ros-kinetic-python-qt-binding'
+	'ros-kinetic-qt-gui'
+	'ros-kinetic-rospy'
+	'ros-kinetic-rqt-console'
+	'ros-kinetic-rqt-gui'
+	'ros-kinetic-rqt-gui-py'
+	'ros-kinetic-rqt-nav-view'
+	'ros-kinetic-rqt-robot-monitor'
+)
+
+# Git version (e.g. for debugging)
+# _tag=release/kinetic/rqt_robot_dashboard/${pkgver}-${_pkgver_patch}
+# _dir=${pkgname}
+# source=("${_dir}"::"git+https://github.com/ros-gbp/rqt_robot_dashboard-release.git"#tag=${_tag})
+# sha256sums=('SKIP')
+
+# Tarball version (faster download)
+_dir="rqt_robot_dashboard-release-release-kinetic-rqt_robot_dashboard-${pkgver}-${_pkgver_patch}"
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/rqt_robot_dashboard-release/archive/release/kinetic/rqt_robot_dashboard/${pkgver}-${_pkgver_patch}.tar.gz")
+sha256sums=('7f52846bd254213b9f245b0be802ff07701f3e57742ca0a13c1ffbeb262116cd')
+
+build() {
+	# Use ROS environment variables
+	source /usr/share/ros-build-tools/clear-ros-env.sh
+	[ -f /opt/ros/kinetic/setup.bash ] && source /opt/ros/kinetic/setup.bash
+
+	# Create build directory
+	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+	cd ${srcdir}/build
+
+	# Fix Python2/Python3 conflicts
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 ${srcdir}/${_dir}
+
+	# Build project
+	cmake ${srcdir}/${_dir} \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DCATKIN_BUILD_BINARY_PACKAGE=ON \
+				-DCMAKE_INSTALL_PREFIX=/opt/ros/kinetic \
+				-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+				-DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+				-DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+				-DPYTHON_BASENAME=.cpython-36m \
+				-DSETUPTOOLS_DEB_LAYOUT=OFF
+	make
+}
+
+package() {
+	cd "${srcdir}/build"
+	make DESTDIR="${pkgdir}/" install
+}

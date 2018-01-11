@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-catkin
+	pkgdesc = ROS - Low-level build system macros and infrastructure for ROS.
+	pkgver = 0.7.8
+	pkgrel = 2
+	url = https://github.com/ros/catkin
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-mock
+	makedepends = python-nose
+	makedepends = ros-build-tools
+	depends = gtest
+	depends = python
+	depends = python-catkin-pkg
+	depends = python-empy
+	depends = python-nose
+	source = ros-kinetic-catkin-0.7.8-0.tar.gz::https://github.com/ros-gbp/catkin-release/archive/release/kinetic/catkin/0.7.8-0.tar.gz
+	sha256sums = 4b2b3b1697689bcdc1ddc5aab99a93bef8abed989aa3a48623ad357d38fdc3c9
+
+pkgname = ros-kinetic-catkin
+

@@ -1,0 +1,16 @@
+pkgbase = aprt
+	pkgdesc = Arch Linux binary packare repository tools
+	pkgver = 0.1.7
+	pkgrel = 1
+	url = https://github.com/delftrobotics/python-aprt
+	arch = any
+	license = BSD
+	makedepends = python-setuptools
+	depends = python
+	depends = python-libarchive-c
+	provides = python-aprt
+	source = python-aprt-0.1.7.tar.gz::https://github.com/delftrobotics/python-aprt/archive/0.1.7.tar.gz
+	sha512sums = 9b9a61331244a0932b318d156415595c1e6cef13a846c01cd106580a3eb5b4c6c4bf58608ebe98a7352dcdaba84e12e17a604a827d2c1a5b8cc77f507c057849
+
+pkgname = aprt
+

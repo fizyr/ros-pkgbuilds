@@ -1,0 +1,15 @@
+pkgbase = lmop
+	pkgdesc = Open-source header-only command line option parser for C++.
+	pkgver = 1.7
+	pkgrel = 1
+	url = http://optionparser.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	source = https://downloads.sourceforge.net/project/optionparser/optionparser-1.7.tar.gz
+	source = lmop-config.cmake
+	sha256sums = b3818c1523bc67d8b0802d7133bdb1c4407b72365f338d96f58a29fe5beeee11
+	sha256sums = 6947d7f73766e0748acb0a26d4f6f8ec3feeb6dd6c34a402e0e337479f1856f7
+
+pkgname = lmop
+

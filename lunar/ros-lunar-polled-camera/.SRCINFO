@@ -1,0 +1,21 @@
+pkgbase = ros-lunar-polled-camera
+	pkgdesc = ROS - polled_camera contains a service and C++ helper classes for implementing a polled camera driver node and requesting images from it.
+	pkgver = 1.11.13
+	pkgrel = 1
+	url = https://github.com/ros-perception/image_common
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-image-transport
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-std-msgs
+	source = ros-lunar-polled-camera-1.11.13-0.tar.gz::https://github.com/ros-gbp/image_common-release/archive/release/lunar/polled_camera/1.11.13-0.tar.gz
+	sha256sums = 5da5d907214530c0126171b13a9cfc6aaf550ab11969597bc9f26916dbfa0398
+
+pkgname = ros-lunar-polled-camera
+

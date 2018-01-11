@@ -1,0 +1,27 @@
+pkgbase = ros-lunar-rqt-plot
+	pkgdesc = ROS - rqt_plot provides a GUI plugin visualizing numeric values in a 2D plot using different plotting backends.
+	pkgver = 0.4.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_plot/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-matplotlib
+	depends = python-numpy
+	depends = python-rospkg
+	depends = ros-lunar-python-qt-binding
+	depends = ros-lunar-qt-gui-py-common
+	depends = ros-lunar-qwt-dependency
+	depends = ros-lunar-rosgraph
+	depends = ros-lunar-rostopic
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	depends = ros-lunar-rqt-py-common
+	depends = ros-lunar-std-msgs
+	source = ros-lunar-rqt-plot-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_plot-release/archive/release/lunar/rqt_plot/0.4.8-0.tar.gz
+	sha256sums = ccf117e06d080f1f11bcd66bdfab0f4a7763d92160352d5473509bb0c090016e
+
+pkgname = ros-lunar-rqt-plot
+

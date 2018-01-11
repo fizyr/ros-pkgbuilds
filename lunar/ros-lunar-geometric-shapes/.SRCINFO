@@ -1,0 +1,29 @@
+pkgbase = ros-lunar-geometric-shapes
+	pkgdesc = ROS - This package contains generic definitions of geometric shapes and bodies.
+	pkgver = 0.5.3
+	pkgrel = 1
+	url = http://ros.org/wiki/geometric_shapes
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-rosunit
+	depends = assimp
+	depends = boost
+	depends = boost-libs
+	depends = console-bridge
+	depends = eigen3
+	depends = octomap
+	depends = pkg-config
+	depends = qhull
+	depends = ros-lunar-eigen-stl-containers
+	depends = ros-lunar-random-numbers
+	depends = ros-lunar-resource-retriever
+	depends = ros-lunar-shape-msgs
+	depends = ros-lunar-visualization-msgs
+	source = ros-lunar-geometric-shapes-0.5.3-0.tar.gz::https://github.com/ros-gbp/geometric_shapes-release/archive/release/lunar/geometric_shapes/0.5.3-0.tar.gz
+	sha256sums = d467aed74d2d66208fdb475f61850414cbabfb04d5d96bbb5efa5b85bfe14798
+
+pkgname = ros-lunar-geometric-shapes
+

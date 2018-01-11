@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-rqt-runtime-monitor
+	pkgdesc = ROS - rqt_runtime_monitor provides a GUI plugin viewing DiagnosticsArray messages.
+	pkgver = 0.5.7
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_runtime_monitor/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-diagnostic-msgs
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-gui
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	source = ros-kinetic-rqt-runtime-monitor-0.5.7-0.tar.gz::https://github.com/ros-gbp/rqt_runtime_monitor-release/archive/release/kinetic/rqt_runtime_monitor/0.5.7-0.tar.gz
+	sha256sums = 45cf250ce885a50ea9aaa0fc2570ea86493fd642f183476375dc2a9e62b57822
+
+pkgname = ros-kinetic-rqt-runtime-monitor
+

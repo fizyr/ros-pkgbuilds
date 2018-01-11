@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-rosmaster
+	pkgdesc = ROS - ROS Master implementation.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rosmaster
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-defusedxml
+	depends = ros-kinetic-rosgraph
+	source = ros-kinetic-rosmaster-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosmaster/1.12.12-0.tar.gz
+	sha256sums = 5e6262474b4ee1a77d1e35aae58348ea1087a8f46d07c95f2673471a2063ebf3
+
+pkgname = ros-kinetic-rosmaster
+

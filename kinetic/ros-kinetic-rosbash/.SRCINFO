@@ -1,0 +1,16 @@
+pkgbase = ros-kinetic-rosbash
+	pkgdesc = ROS - Assorted shell commands for using ros with bash.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://www.ros.org/wiki/rosbash
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-catkin
+	source = ros-kinetic-rosbash-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosbash/1.13.6-0.tar.gz
+	sha256sums = 5e3110689ea560bd8c66c9e407233af1311761712803ca042d2293e4e40d1446
+
+pkgname = ros-kinetic-rosbash
+

@@ -1,0 +1,28 @@
+pkgbase = ros-kinetic-actionlib
+	pkgdesc = ROS - The actionlib stack provides a standardized interface for interfacing with preemptable tasks.
+	pkgver = 1.11.11
+	pkgrel = 1
+	url = https://github.com/ros/actionlib
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rosnode
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-actionlib-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-rostopic
+	depends = ros-kinetic-std-msgs
+	depends = wxpython
+	source = ros-kinetic-actionlib-1.11.11-0.tar.gz::https://github.com/ros-gbp/actionlib-release/archive/release/kinetic/actionlib/1.11.11-0.tar.gz
+	sha256sums = 328a2bbb5befe4855eb0628caa0d8fb642a47ce976492c632d8d2fb8399f541c
+
+pkgname = ros-kinetic-actionlib
+

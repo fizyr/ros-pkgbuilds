@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-bondcpp
+	pkgdesc = ROS - C++ implementation of bond, a mechanism for checking when another process has terminated.
+	pkgver = 1.8.1
+	pkgrel = 1
+	url = https://github.com/ros/bond_core
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-bond
+	depends = ros-kinetic-cmake-modules
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-smclib
+	depends = util-linux
+	source = ros-kinetic-bondcpp-1.8.1-0.tar.gz::https://github.com/ros-gbp/bond_core-release/archive/release/kinetic/bondcpp/1.8.1-0.tar.gz
+	sha256sums = c26ba1aa1cca8e6d2bb5e7b43bb0d3d9e08664e8578584c7a8d8ed00037d8e29
+
+pkgname = ros-kinetic-bondcpp
+

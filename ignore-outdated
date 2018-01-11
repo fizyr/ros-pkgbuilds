@@ -1,0 +1,15 @@
+bash
+doxygen
+git
+mercurial
+gcc
+python
+python2
+python-setuptools
+python2-setuptools
+ros-kinetic-rostest
+ros-kinetic-catkin
+ros-kinetic-cmake-modules
+cmake
+scons
+python-paramiko

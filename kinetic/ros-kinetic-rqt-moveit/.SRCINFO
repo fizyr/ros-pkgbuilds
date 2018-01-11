@@ -1,0 +1,24 @@
+pkgbase = ros-kinetic-rqt-moveit
+	pkgdesc = ROS - An rqt-based tool that assists monitoring tasks for MoveIt! motion planner developers and users.
+	pkgver = 0.5.7
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_moveit/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-rosnode
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rostopic
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-py-common
+	depends = ros-kinetic-rqt-topic
+	depends = ros-kinetic-sensor-msgs
+	source = ros-kinetic-rqt-moveit-0.5.7-0.tar.gz::https://github.com/ros-gbp/rqt_moveit-release/archive/release/kinetic/rqt_moveit/0.5.7-0.tar.gz
+	sha256sums = e88db6b5e1b396b14786a0da4eeb62fcfa21b035ad4ae9a112ea566dd0db7c8a
+
+pkgname = ros-kinetic-rqt-moveit
+

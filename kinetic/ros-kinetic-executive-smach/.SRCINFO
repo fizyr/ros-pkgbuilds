@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-executive-smach
+	pkgdesc = ROS - This metapackage depends on the SMACH library and ROS SMACH integration packages.
+	pkgver = 2.0.1
+	pkgrel = 13
+	url = http://ros.org/wiki/smach
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-smach
+	depends = ros-kinetic-smach-msgs
+	depends = ros-kinetic-smach-ros
+	source = ros-kinetic-executive-smach-2.0.1-0.tar.gz::https://github.com/ros-gbp/executive_smach-release/archive/release/kinetic/executive_smach/2.0.1-0.tar.gz
+	sha256sums = f5c17a26e1235ce460026d47e673f955e9fc04ea7c432dadde2cf1654fe257ac
+
+pkgname = ros-kinetic-executive-smach
+

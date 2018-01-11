@@ -1,0 +1,27 @@
+pkgbase = ros-lunar-rqt-bag-plugins
+	pkgdesc = ROS - rqt_bag provides a GUI plugin for displaying and replaying ROS bag files.
+	pkgver = 0.4.11
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_bag/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-cairo
+	depends = python-pillow
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-rosbag
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rospy
+	depends = ros-lunar-rqt-bag
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	depends = ros-lunar-rqt-plot
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-std-msgs
+	source = ros-lunar-rqt-bag-plugins-0.4.11-0.tar.gz::https://github.com/ros-gbp/rqt_bag-release/archive/release/lunar/rqt_bag_plugins/0.4.11-0.tar.gz
+	sha256sums = 23ea1a68f03154a0b2639a550d51628f1f68a299d919f79a36c7eafc33a76dde
+
+pkgname = ros-lunar-rqt-bag-plugins
+

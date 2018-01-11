@@ -1,0 +1,25 @@
+pkgbase = ros-lunar-turtle-actionlib
+	pkgdesc = ROS - turtle_actionlib demonstrates how to write an action server and client with the turtlesim.
+	pkgver = 0.1.10
+	pkgrel = 1
+	url = https://github.com/ros/common_tutorials/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-actionlib
+	depends = ros-lunar-actionlib-msgs
+	depends = ros-lunar-angles
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-std-msgs
+	depends = ros-lunar-turtlesim
+	source = ros-lunar-turtle-actionlib-0.1.10-0.tar.gz::https://github.com/ros-gbp/common_tutorials-release/archive/release/lunar/turtle_actionlib/0.1.10-0.tar.gz
+	sha256sums = 0a616f9b31841011a0aa1300b9a2982f7f65350092284ec05d67442eb1836230
+
+pkgname = ros-lunar-turtle-actionlib
+

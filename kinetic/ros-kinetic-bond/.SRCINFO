@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-bond
+	pkgdesc = ROS - A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.
+	pkgver = 1.8.1
+	pkgrel = 1
+	url = https://github.com/ros/bond_core
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-bond-1.8.1-0.tar.gz::https://github.com/ros-gbp/bond_core-release/archive/release/kinetic/bond/1.8.1-0.tar.gz
+	sha256sums = 800c926f8e1ca7d4bd515121ce2e7cf4e6723a90ef1a2f40b64083895c572db6
+
+pkgname = ros-kinetic-bond
+

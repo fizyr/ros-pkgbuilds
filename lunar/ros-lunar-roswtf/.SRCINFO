@@ -1,0 +1,27 @@
+pkgbase = ros-lunar-roswtf
+	pkgdesc = ROS - roswtf is a tool for diagnosing issues with a running ROS system.
+	pkgver = 1.13.5
+	pkgrel = 1
+	url = http://ros.org/wiki/roswtf
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-cmake-modules
+	makedepends = ros-lunar-rosbag
+	makedepends = ros-lunar-std-srvs
+	depends = python-paramiko
+	depends = python-rospkg
+	depends = ros-lunar-rosbuild
+	depends = ros-lunar-rosgraph
+	depends = ros-lunar-roslaunch
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rosnode
+	depends = ros-lunar-rosservice
+	depends = ros-lunar-rostest
+	source = ros-lunar-roswtf-1.13.5-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/lunar/roswtf/1.13.5-0.tar.gz
+	sha256sums = d29ab5719ef2059d733d5cd41b21db952433167d4dad92899cdfa2c0605778fa
+
+pkgname = ros-lunar-roswtf
+

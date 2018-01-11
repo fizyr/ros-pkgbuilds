@@ -1,0 +1,24 @@
+pkgbase = ros-lunar-camera-info-manager
+	pkgdesc = ROS - This package provides a C++ interface for camera calibration information.
+	pkgver = 1.11.13
+	pkgrel = 1
+	url = https://github.com/ros-perception/image_common
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = gtest
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-lunar-camera-calibration-parsers
+	depends = ros-lunar-image-transport
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rostest
+	depends = ros-lunar-sensor-msgs
+	source = ros-lunar-camera-info-manager-1.11.13-0.tar.gz::https://github.com/ros-gbp/image_common-release/archive/release/lunar/camera_info_manager/1.11.13-0.tar.gz
+	sha256sums = 76bea33eed563058d9e9d3aecdfdcc472a0600fa1ad0c3a4b4b8d3d5eb9a39fa
+
+pkgname = ros-lunar-camera-info-manager
+

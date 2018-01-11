@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-diagnostics
+	pkgdesc = ROS - diagnostics.
+	pkgver = 1.9.2
+	pkgrel = 21
+	url = http://www.ros.org/wiki/diagnostics
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-diagnostic-aggregator
+	depends = ros-kinetic-diagnostic-analysis
+	depends = ros-kinetic-diagnostic-common-diagnostics
+	depends = ros-kinetic-diagnostic-updater
+	depends = ros-kinetic-self-test
+	source = ros-kinetic-diagnostics-1.9.2-0.tar.gz::https://github.com/ros-gbp/diagnostics-release/archive/release/kinetic/diagnostics/1.9.2-0.tar.gz
+	sha256sums = 3ab70c8dc4dfddae75923201f1e8614f3e2e28ffd2089d07867a7fbb2bb25b06
+
+pkgname = ros-kinetic-diagnostics
+

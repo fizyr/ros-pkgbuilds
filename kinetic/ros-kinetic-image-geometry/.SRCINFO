@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-image-geometry
+	pkgdesc = ROS - image_geometry contains C++ and Python libraries for interpreting images geometrically.
+	pkgver = 1.12.7
+	pkgrel = 1
+	url = http://www.ros.org/wiki/image_geometry
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = opencv
+	depends = ros-kinetic-sensor-msgs
+	source = ros-kinetic-image-geometry-1.12.7-0.tar.gz::https://github.com/ros-gbp/vision_opencv-release/archive/release/kinetic/image_geometry/1.12.7-0.tar.gz
+	sha256sums = 66add18697dd701fcbad289f69eb75ef3a26791bfe4dabe3915cea8c647099ec
+
+pkgname = ros-kinetic-image-geometry
+

@@ -1,0 +1,87 @@
+# Maintainer: Hans Gaiser <hansg91@gmail.com>
+
+pkgname=caffe
+pkgver=1.0.dr4
+pkgrel=13
+pkgdesc='A fast framework for deep learning built in C++ for speed with a Python 3 interface'
+arch=(x86_64)
+url='ssh://git@github.com/delftrobotics/caffe'
+license=('BSD')
+
+depends=(
+	'boost'
+	'boost-libs'
+	'cblas'
+	'cuda'
+	'cudnn'
+	'cython'
+	'gflags'
+	'google-glog'
+	'hdf5'
+	'ipython'
+	'leveldb'
+	'lmdb'
+	'opencv'
+	'protobuf'
+	'python-dateutil'
+	'python-matplotlib'
+	'python-networkx'
+	'python-nose'
+	'python-numpy'
+	'python-numpy'
+	'python-pillow'
+	'python-protobuf'
+	'python-scikit-image'
+	'python-scikit-learn'
+	'python-scipy'
+	'python-yaml'
+)
+
+_ref="$pkgver"
+_dir="$pkgname-$_ref"
+
+source=(
+	"$pkgname-$pkgver.tar.gz::https://github.com/delftrobotics-forks/caffe/archive/${pkgver}.tar.gz"
+)
+makedepends=('gcc-fortran' 'cmake')
+sha256sums=('4e21d7a6c5ccc3bb60ac4da6f4a726b9368cdaaa1153158b79e6a092dfea4e53')
+
+prepare() {
+	local dir="$srcdir/$_dir"
+	rm -rf "$srcdir/build"
+	mkdir "$srcdir/build"
+	cd "$srcdir/build"
+
+	sed -ie 's#set(Caffe_known_gpu_archs "20 21(20) 30 35 50 60 61")#set(Caffe_known_gpu_archs "30 35 50 60 61 70")#' "$dir/cmake/Cuda.cmake"
+
+	cmake "$dir" \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DBLAS=cblas \
+		-Dpython_version=3 \
+		-DBoost_PYTHON_LIBRARY_RELEASE=/usr/lib/libboost_python3.so \
+		-DCUDA_HOST_COMPILER=/usr/bin/g++-6
+}
+
+build() {
+	cd "$srcdir/build"
+	make
+}
+
+package() {
+	local dir="$srcdir/$_dir"
+	cd "$srcdir/build"
+	make DESTDIR="${pkgdir}" install
+
+	# Setup Python by hand
+	mkdir -p "$pkgdir/usr/lib/python3.6/site-packages/"
+	mv "$pkgdir/usr/python/caffe" "$pkgdir/usr/lib/python3.6/site-packages/caffe/"
+	rm -rf "$pkgdir/usr/python"
+
+	# Install BSD License
+	install -D -m644 "$dir/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+
+	# Install Documentation
+	install -D -m644 "$dir/README.md" "$pkgdir/usr/share/doc/$pkgname/README.md"
+}

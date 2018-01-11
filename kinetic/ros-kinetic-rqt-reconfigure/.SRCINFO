@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-rqt-reconfigure
+	pkgdesc = ROS - This rqt plugin succeeds former dynamic_reconfigures GUI (reconfigure_gui), and provides the way to view and edit the parameters that are accessible via dynamic_reconfigure.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_reconfigure/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-dynamic-reconfigure
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-console
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-py-common
+	source = ros-kinetic-rqt-reconfigure-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_reconfigure-release/archive/release/kinetic/rqt_reconfigure/0.4.8-0.tar.gz
+	sha256sums = 7d793c4c5436bdf04f28e8f2de1b01e57affd70def4550fc3340549fc9631eba
+
+pkgname = ros-kinetic-rqt-reconfigure
+

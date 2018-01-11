@@ -1,0 +1,18 @@
+pkgbase = ros-kinetic-rosgraph
+	pkgdesc = ROS - rosgraph contains the rosgraph command-line tool, which prints information about the ROS Computation Graph.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rosgraph
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-mock
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-netifaces
+	depends = python-rospkg
+	source = ros-kinetic-rosgraph-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosgraph/1.12.12-0.tar.gz
+	sha256sums = b1d51a3dedd4c6793f8e7d58ae12256727d37efff946cb6a1e8c2f190d34dcba
+
+pkgname = ros-kinetic-rosgraph
+

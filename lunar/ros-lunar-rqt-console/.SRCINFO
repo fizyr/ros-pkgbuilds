@@ -1,0 +1,23 @@
+pkgbase = ros-lunar-rqt-console
+	pkgdesc = ROS - rqt_console provides a GUI plugin for displaying and filtering ROS messages.
+	pkgver = 0.4.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_console/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-rospkg
+	depends = ros-lunar-python-qt-binding
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rospy
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	depends = ros-lunar-rqt-logger-level
+	depends = ros-lunar-rqt-py-common
+	source = ros-lunar-rqt-console-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_console-release/archive/release/lunar/rqt_console/0.4.8-0.tar.gz
+	sha256sums = b0bba8b42087042d813646bb084b3a69202dd28dc71f048414da7f16ab30c0ec
+
+pkgname = ros-lunar-rqt-console
+

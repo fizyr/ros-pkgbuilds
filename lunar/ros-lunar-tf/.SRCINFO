@@ -1,0 +1,30 @@
+pkgbase = ros-lunar-tf
+	pkgdesc = ROS - tf is a package that lets the user keep track of multiple coordinate frames over time.
+	pkgver = 1.11.9
+	pkgrel = 1
+	url = http://www.ros.org/wiki/tf
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-rostest
+	makedepends = ros-lunar-rosunit
+	depends = graphviz
+	depends = ros-lunar-angles
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-message-filters
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-rostime
+	depends = ros-lunar-roswtf
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-std-msgs
+	depends = ros-lunar-tf2-ros
+	source = ros-lunar-tf-1.11.9-0.tar.gz::https://github.com/ros-gbp/geometry-release/archive/release/lunar/tf/1.11.9-0.tar.gz
+	sha256sums = 350e4ddfc5d16246e4d43d047a70495f1c7942ac64d7176c486cbf664712b716
+
+pkgname = ros-lunar-tf
+

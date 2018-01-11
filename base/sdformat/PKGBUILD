@@ -1,0 +1,30 @@
+pkgname=sdformat
+pkgver=5.2.0
+pkgrel=6
+pkgdesc="SDF Converter for gazebo"
+arch=('i686' 'x86_64')
+url="http://sdformat.org/"
+license=('Apache')
+depends=('boost' 'tinyxml' 'ignition-math')
+makedepends=('cmake' 'doxygen' 'ruby>=1.9.1')
+
+source=("https://bitbucket.org/osrf/sdformat/get/${pkgname}5_$pkgver.tar.bz2")
+sha256sums=('71376919b9fe3a43a55bb70b59d30f4c70ed593d38c8d825fbe13f7c1f8e8b89')
+
+
+_dir=osrf-sdformat-e59451e09b30
+
+build() {
+  mkdir -p build && cd build
+
+  cmake "$srcdir/$_dir" \
+           -DCMAKE_BUILD_TYPE="Release" \
+           -DCMAKE_INSTALL_PREFIX=/usr \
+           -DCMAKE_INSTALL_LIBDIR=lib
+
+  make
+}
+
+package() {
+  make -C "$srcdir/build" install DESTDIR="$pkgdir"
+}

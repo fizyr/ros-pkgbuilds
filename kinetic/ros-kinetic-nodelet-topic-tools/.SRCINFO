@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-nodelet-topic-tools
+	pkgdesc = ROS - This package contains common nodelet tools such as a mux, demux and throttle.
+	pkgver = 1.9.14
+	pkgrel = 1
+	url = https://github.com/ros/nodelet_core
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-dynamic-reconfigure
+	depends = ros-kinetic-message-filters
+	depends = ros-kinetic-nodelet
+	depends = ros-kinetic-pluginlib
+	depends = ros-kinetic-roscpp
+	source = ros-kinetic-nodelet-topic-tools-1.9.14-0.tar.gz::https://github.com/ros-gbp/nodelet_core-release/archive/release/kinetic/nodelet_topic_tools/1.9.14-0.tar.gz
+	sha256sums = 443517946f7ad2ee23784f83329b2fb60f4203f8306d99b1caa64b44241af1a3
+
+pkgname = ros-kinetic-nodelet-topic-tools
+

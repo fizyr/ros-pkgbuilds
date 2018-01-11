@@ -1,0 +1,91 @@
+# Script generated with import_catkin_packages.py
+# For more information: https://github.com/bchretien/arch-ros-stacks
+pkgdesc="ROS - 3D visualization tool for ROS."
+url='https://github.com/ros-visualization/rviz/issues'
+
+pkgname='ros-kinetic-rviz'
+pkgver='1.12.15'
+_pkgver_patch=0
+arch=('any')
+pkgrel=1
+license=('BSD, Creative Commons')
+
+makedepends=(
+	'cmake'
+	'ros-build-tools'
+	'ros-kinetic-catkin'
+)
+depends=(
+	'assimp'
+	'eigen3'
+	'mesa'
+	'ogre'
+	'qt5-base'
+	'ros-kinetic-cmake-modules'
+	'ros-kinetic-geometry-msgs'
+	'ros-kinetic-image-transport'
+	'ros-kinetic-interactive-markers'
+	'ros-kinetic-laser-geometry'
+	'ros-kinetic-map-msgs'
+	'ros-kinetic-media-export'
+	'ros-kinetic-message-filters'
+	'ros-kinetic-nav-msgs'
+	'ros-kinetic-pluginlib'
+	'ros-kinetic-python-qt-binding'
+	'ros-kinetic-resource-retriever'
+	'ros-kinetic-rosbag'
+	'ros-kinetic-rosconsole'
+	'ros-kinetic-roscpp'
+	'ros-kinetic-roslib'
+	'ros-kinetic-rospy'
+	'ros-kinetic-sensor-msgs'
+	'ros-kinetic-std-msgs'
+	'ros-kinetic-std-srvs'
+	'ros-kinetic-tf'
+	'ros-kinetic-urdf'
+	'ros-kinetic-visualization-msgs'
+	'tinyxml'
+	'urdfdom-headers'
+	'yaml-cpp'
+)
+
+# Git version (e.g. for debugging)
+# _tag=release/kinetic/rviz/${pkgver}-${_pkgver_patch}
+# _dir=${pkgname}
+# source=("${_dir}"::"git+https://github.com/ros-gbp/rviz-release.git"#tag=${_tag})
+# sha256sums=('SKIP')
+
+# Tarball version (faster download)
+_dir="rviz-release-release-kinetic-rviz-${pkgver}-${_pkgver_patch}"
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/rviz-release/archive/release/kinetic/rviz/${pkgver}-${_pkgver_patch}.tar.gz")
+sha256sums=('f37baddc01fdc63586de61b5266c4d7bbcfac9d3f8696804e54e3d2165295afa')
+
+build() {
+	# Use ROS environment variables
+	source /usr/share/ros-build-tools/clear-ros-env.sh
+	[ -f /opt/ros/kinetic/setup.bash ] && source /opt/ros/kinetic/setup.bash
+
+	# Create build directory
+	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+	cd ${srcdir}/build
+
+	# Fix Python2/Python3 conflicts
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 ${srcdir}/${_dir}
+
+	# Build project
+	cmake ${srcdir}/${_dir} \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DCATKIN_BUILD_BINARY_PACKAGE=ON \
+				-DCMAKE_INSTALL_PREFIX=/opt/ros/kinetic \
+				-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+				-DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+				-DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+				-DPYTHON_BASENAME=.cpython-36m \
+				-DSETUPTOOLS_DEB_LAYOUT=OFF
+	make
+}
+
+package() {
+	cd "${srcdir}/build"
+	make DESTDIR="${pkgdir}/" install
+}

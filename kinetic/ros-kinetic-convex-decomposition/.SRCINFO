@@ -1,0 +1,16 @@
+pkgbase = ros-kinetic-convex-decomposition
+	pkgdesc = ROS - Convex Decomposition Tool for Robot Model.
+	pkgver = 0.1.11
+	pkgrel = 7
+	url = http://kforge.ros.org/robotmodel/convex_decomposition
+	arch = any
+	license = MIT
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = unzip
+	source = ros-kinetic-convex-decomposition-0.1.11-0.tar.gz::https://github.com/ros-gbp/convex_decomposition-release/archive/release/kinetic/convex_decomposition/0.1.11-0.tar.gz
+	sha256sums = 990f02bf853c764648a95c2005bb32176728baf03ef691676979bdc45881a0fc
+
+pkgname = ros-kinetic-convex-decomposition
+

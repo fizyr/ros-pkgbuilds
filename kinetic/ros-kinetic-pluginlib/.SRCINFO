@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-pluginlib
+	pkgdesc = ROS - The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure.
+	pkgver = 1.11.2
+	pkgrel = 1
+	url = https://github.com/ros/pluginlib
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-class-loader
+	depends = ros-kinetic-cmake-modules
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-roslib
+	depends = tinyxml2
+	source = ros-kinetic-pluginlib-1.11.2-0.tar.gz::https://github.com/ros-gbp/pluginlib-release/archive/release/kinetic/pluginlib/1.11.2-0.tar.gz
+	sha256sums = b4d5e930606975d7e2865759665a9bfe793ec816f9f2a79883bd09e04d9043b7
+
+pkgname = ros-kinetic-pluginlib
+

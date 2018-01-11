@@ -1,0 +1,26 @@
+pkgbase = ros-lunar-turtlesim
+	pkgdesc = ROS - turtlesim is a tool made for teaching ROS and ROS packages.
+	pkgver = 0.8.1
+	pkgrel = 1
+	url = https://github.com/ros/ros_tutorials
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = qt5-base
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-roscpp-serialization
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rostime
+	depends = ros-lunar-std-msgs
+	depends = ros-lunar-std-srvs
+	source = ros-lunar-turtlesim-0.8.1-0.tar.gz::https://github.com/ros-gbp/ros_tutorials-release/archive/release/lunar/turtlesim/0.8.1-0.tar.gz
+	sha256sums = ce15b5cb9dd8c7b43bd5082bd62f713e09fdc55d0bcb081fd462df88e14fda1f
+
+pkgname = ros-lunar-turtlesim
+

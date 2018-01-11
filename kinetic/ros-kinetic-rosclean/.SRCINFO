@@ -1,0 +1,16 @@
+pkgbase = ros-kinetic-rosclean
+	pkgdesc = ROS - rosclean: cleanup filesystem resources (e.g.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://ros.org/wiki/rosclean
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	source = ros-kinetic-rosclean-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosclean/1.13.6-0.tar.gz
+	sha256sums = fb5f40991b301c846105a166fe4e7a842d8e0fc8b10b602bcb586a173853df6f
+
+pkgname = ros-kinetic-rosclean
+

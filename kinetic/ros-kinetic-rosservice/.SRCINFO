@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-rosservice
+	pkgdesc = ROS - rosservice contains the rosservice command-line tool for listing and querying ROS Services.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rosservice
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-genpy
+	depends = ros-kinetic-rosgraph
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rosmsg
+	depends = ros-kinetic-rospy
+	source = ros-kinetic-rosservice-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosservice/1.12.12-0.tar.gz
+	sha256sums = 1f719232f75219dd19e90536c8854d38961db7bb5a5e55d8fd4d9162e6cd3157
+
+pkgname = ros-kinetic-rosservice
+

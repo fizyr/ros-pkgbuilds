@@ -1,0 +1,23 @@
+pkgbase = ros-kinetic-diagnostic-aggregator
+	pkgdesc = ROS - diagnostic_aggregator.
+	pkgver = 1.9.2
+	pkgrel = 18
+	url = http://www.ros.org/wiki/diagnostic_aggregator
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-bondcpp
+	depends = ros-kinetic-bondpy
+	depends = ros-kinetic-diagnostic-msgs
+	depends = ros-kinetic-pluginlib
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-xmlrpcpp
+	source = ros-kinetic-diagnostic-aggregator-1.9.2-0.tar.gz::https://github.com/ros-gbp/diagnostics-release/archive/release/kinetic/diagnostic_aggregator/1.9.2-0.tar.gz
+	sha256sums = f0a2eaff1ae4390786a06d578be30180fb3b42ff661b8b26f8b7871889522ca6
+
+pkgname = ros-kinetic-diagnostic-aggregator
+

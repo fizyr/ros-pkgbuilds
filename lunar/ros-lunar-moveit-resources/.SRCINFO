@@ -1,0 +1,17 @@
+pkgbase = ros-lunar-moveit-resources
+	pkgdesc = ROS - Resources used for MoveIt! testing.
+	pkgver = 0.6.2
+	pkgrel = 1
+	url = https://github.com/ros-planning/moveit-resources
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-joint-state-publisher
+	depends = ros-lunar-robot-state-publisher
+	source = ros-lunar-moveit-resources-0.6.2-0.tar.gz::https://github.com/ros-gbp/moveit_resources-release/archive/release/lunar/moveit_resources/0.6.2-0.tar.gz
+	sha256sums = 59354ec025a6fc0eaf1c4f6b2bf68dcec0265abe67bc723d94233b65579d4078
+
+pkgname = ros-lunar-moveit-resources
+

@@ -1,0 +1,35 @@
+# Maintainer: Maaarten de Vries <maarten@de-vri.es>
+
+pkgname='octomap'
+pkgver='1.9.0'
+pkgrel=2
+pkgdesc='An Efficient Probabilistic 3D Mapping Framework Based on Octrees'
+url='http://octomap.github.io/'
+arch=('x86_64' 'i686')
+license=('GPL' 'BSD')
+depends=(qt4 glu)
+makedepends=(cmake)
+options=(staticlibs)
+
+source=("$pkgname-$pkgver.tar.gz::https://github.com/OctoMap/octomap/archive/v$pkgver.tar.gz")
+sha512sums=('335a4ee3fe20f456afd2d8491f8fe6cfc2527d6e26aa690a69a39c1468e41d312fd84c85a1247deb11f513b9d50b8c69d34b46876f8257c205b0a99bac826237')
+
+build() {
+	# Create build directory
+	mkdir -p "${srcdir}/build"
+	cd "${srcdir}/build"
+
+	# Build project
+	cmake "$srcdir/$pkgname-$pkgver" \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr
+	make
+}
+
+package() {
+	cd "$srcdir/build"
+	make install DESTDIR="$pkgdir"
+	install -D "$srcdir/$pkgname-$pkgver/octomap/LICENSE.txt"      "$pkgdir/usr/share/licenses/octomap/LICENSE.txt"
+	install -D "$srcdir/$pkgname-$pkgver/octovis/LICENSE.txt"      "$pkgdir/usr/share/licenses/octovis/LICENSE.txt"
+	install -D "$srcdir/$pkgname-$pkgver/dynamicEDT3D/LICENSE.txt" "$pkgdir/usr/share/licenses/dynamicEDT3D/LICENSE.txt"
+}

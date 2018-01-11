@@ -1,0 +1,31 @@
+pkgbase = ros-lunar-rosbag
+	pkgdesc = ROS - This is a set of tools for recording from and playing back to ROS topics.
+	pkgver = 1.13.5
+	pkgrel = 1
+	url = http://ros.org/wiki/rosbag
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = boost
+	depends = boost-libs
+	depends = python-pillow
+	depends = python-rospkg
+	depends = ros-lunar-cpp-common
+	depends = ros-lunar-genmsg
+	depends = ros-lunar-genpy
+	depends = ros-lunar-rosbag-storage
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-roscpp-serialization
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rospy
+	depends = ros-lunar-std-srvs
+	depends = ros-lunar-topic-tools
+	depends = ros-lunar-xmlrpcpp
+	source = ros-lunar-rosbag-1.13.5-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/lunar/rosbag/1.13.5-0.tar.gz
+	sha256sums = d8f374ed376e65b14bd94b28d5b5ea740ebc0ac3d3443d44cce8e5cd4894b8d9
+
+pkgname = ros-lunar-rosbag
+

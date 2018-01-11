@@ -1,0 +1,6 @@
+7d6
+< find_package(Eigen3 REQUIRED)
+8a8,10
+> 
+> find_package(PkgConfig)
+> pkg_search_module(Eigen3 REQUIRED eigen3)

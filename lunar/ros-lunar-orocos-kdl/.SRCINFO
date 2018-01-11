@@ -1,0 +1,18 @@
+pkgbase = ros-lunar-orocos-kdl
+	pkgdesc = ROS - This package contains a recent version of the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project.
+	pkgver = 1.3.1
+	pkgrel = 1
+	url = http://wiki.ros.org/orocos_kdl
+	arch = any
+	license = LGPL
+	makedepends = cmake
+	makedepends = cppunit
+	makedepends = ros-build-tools
+	depends = eigen3
+	depends = pkg-config
+	depends = ros-lunar-catkin
+	source = ros-lunar-orocos-kdl-1.3.1-0.tar.gz::https://github.com/smits/orocos-kdl-release/archive/release/lunar/orocos_kdl/1.3.1-0.tar.gz
+	sha256sums = f1c1fe4d24b484ec149313b54c9258832c55de058739d4ff29ab833201aa5132
+
+pkgname = ros-lunar-orocos-kdl
+

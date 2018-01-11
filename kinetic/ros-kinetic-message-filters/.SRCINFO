@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-message-filters
+	pkgdesc = ROS - A set of message filters which take in messages and may output those messages at a later time, based on the conditions that filter needs met.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/message_filters
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-rosunit
+	depends = ros-kinetic-xmlrpcpp
+	source = ros-kinetic-message-filters-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/message_filters/1.12.12-0.tar.gz
+	sha256sums = e67170a0aeae76a7ded485095d5c2dcf46d90181c3c26265f176b28bc5469ca1
+
+pkgname = ros-kinetic-message-filters
+

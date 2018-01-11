@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-urdfdom-py
+	pkgdesc = ROS - Python implementation of the URDF parser.
+	pkgver = 0.3.3
+	pkgrel = 9
+	url = https://github.com/ros/urdf_parser_py
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-catkin-pkg
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python
+	depends = python-lxml
+	depends = ros-kinetic-catkin
+	source = ros-kinetic-urdfdom-py-0.3.3-0.tar.gz::https://github.com/ros-gbp/urdfdom_py-release/archive/release/kinetic/urdfdom_py/0.3.3-0.tar.gz
+	sha256sums = 227ecfa29755182798418037715d3467c7879788669f1c1b8b999b4512e8988d
+
+pkgname = ros-kinetic-urdfdom-py
+

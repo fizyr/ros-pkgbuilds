@@ -1,0 +1,25 @@
+pkgbase = ros-lunar-stereo-image-proc
+	pkgdesc = ROS - Stereo and single image rectification and disparity processing.
+	pkgver = 1.12.21
+	pkgrel = 1
+	url = http://www.ros.org/wiki/stereo_image_proc
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-rostest
+	depends = ros-lunar-cv-bridge
+	depends = ros-lunar-dynamic-reconfigure
+	depends = ros-lunar-image-geometry
+	depends = ros-lunar-image-proc
+	depends = ros-lunar-image-transport
+	depends = ros-lunar-message-filters
+	depends = ros-lunar-nodelet
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-stereo-msgs
+	source = ros-lunar-stereo-image-proc-1.12.21-0.tar.gz::https://github.com/ros-gbp/image_pipeline-release/archive/release/lunar/stereo_image_proc/1.12.21-0.tar.gz
+	sha256sums = 15fc9fbba35a0fd3548f867632ac545ba4359776884c9d853be04e7bb76f79f1
+
+pkgname = ros-lunar-stereo-image-proc
+

@@ -1,0 +1,27 @@
+pkgbase = ros-kinetic-rqt-graph
+	pkgdesc = ROS - rqt_graph provides a GUI plugin for visualizing the ROS computation graph.
+	pkgver = 0.4.9
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_graph/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-dotgraph
+	depends = ros-kinetic-rosgraph
+	depends = ros-kinetic-rosgraph-msgs
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rosnode
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rosservice
+	depends = ros-kinetic-rostopic
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	source = ros-kinetic-rqt-graph-0.4.9-0.tar.gz::https://github.com/ros-gbp/rqt_graph-release/archive/release/kinetic/rqt_graph/0.4.9-0.tar.gz
+	sha256sums = 6907a2f583bd3dd212a988ec918b1b6e4e1141be1565cdf138c86c9e4e9a566b
+
+pkgname = ros-kinetic-rqt-graph
+

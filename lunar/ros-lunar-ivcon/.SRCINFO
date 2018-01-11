@@ -1,0 +1,15 @@
+pkgbase = ros-lunar-ivcon
+	pkgdesc = ROS - Mesh Conversion Utility Used to generate .iv files from .stl files.
+	pkgver = 0.1.6
+	pkgrel = 1
+	url = https://sourceforge.net/projects/ivcon/
+	arch = any
+	license = GPL
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	source = ros-lunar-ivcon-0.1.6-0.tar.gz::https://github.com/ros-gbp/ivcon-release/archive/release/lunar/ivcon/0.1.6-0.tar.gz
+	sha256sums = c436ad21c51e1b812f4b2466603b8f7ba407ac2b8b633486a5e95de5eb81dfc4
+
+pkgname = ros-lunar-ivcon
+

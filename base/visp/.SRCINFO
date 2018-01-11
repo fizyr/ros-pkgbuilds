@@ -1,0 +1,22 @@
+pkgbase = visp
+	pkgdesc = A modular library for visual tracking and visual servoing
+	pkgver = 3.1.0.b1
+	pkgrel = 6
+	url = http://www.irisa.fr/lagadic/visp/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	license = custom:ViSP Professional Edition License
+	makedepends = cmake
+	depends = gsl
+	depends = libjpeg
+	depends = libpng
+	depends = lapack
+	depends = opencv
+	depends = libx11
+	depends = zlib
+	source = visp-3.1.0.b1.tar.gz::https://github.com/lagadic/visp/archive/91ce3fc853b39203f2a4298570bf5cf6351ff42f.tar.gz
+	sha512sums = 42a397a4b83f5bef520c287d71c850031b8ace061a53ae0fa6206c9103de9c899b00f7191e6250c2d43e952580c765606576c626c072c5bf3d6d6335d74e6e06
+
+pkgname = visp
+

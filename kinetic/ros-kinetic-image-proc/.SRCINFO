@@ -1,0 +1,27 @@
+pkgbase = ros-kinetic-image-proc
+	pkgdesc = ROS - Single image rectification and color processing.
+	pkgver = 1.12.22
+	pkgrel = 1
+	url = http://www.ros.org/wiki/image_proc
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-camera-calibration-parsers
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = boost
+	depends = boost-libs
+	depends = ros-kinetic-cv-bridge
+	depends = ros-kinetic-dynamic-reconfigure
+	depends = ros-kinetic-image-geometry
+	depends = ros-kinetic-image-transport
+	depends = ros-kinetic-nodelet
+	depends = ros-kinetic-nodelet-topic-tools
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-sensor-msgs
+	source = ros-kinetic-image-proc-1.12.22-0.tar.gz::https://github.com/ros-gbp/image_pipeline-release/archive/release/kinetic/image_proc/1.12.22-0.tar.gz
+	sha256sums = 187ab3954f83f43313532f84a1b2965c7c8a1cb058dfcd77cf581cb39a76c69c
+
+pkgname = ros-kinetic-image-proc
+

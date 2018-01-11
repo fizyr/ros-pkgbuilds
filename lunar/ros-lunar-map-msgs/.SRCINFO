@@ -1,0 +1,20 @@
+pkgbase = ros-lunar-map-msgs
+	pkgdesc = ROS - This package defines messages commonly used in mapping packages.
+	pkgver = 1.13.0
+	pkgrel = 1
+	url = https://github.com/ros-planning/navigation_msgs/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-nav-msgs
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-std-msgs
+	source = ros-lunar-map-msgs-1.13.0-0.tar.gz::https://github.com/ros-gbp/navigation_msgs-release/archive/release/lunar/map_msgs/1.13.0-0.tar.gz
+	sha256sums = 86c5ca9ad9fdf0f6f06f89ba0a5a75c3621edb31cace52ce77570910a4978a44
+
+pkgname = ros-lunar-map-msgs
+

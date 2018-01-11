@@ -1,0 +1,21 @@
+pkgbase = ros-lunar-turtle-tf
+	pkgdesc = ROS - turtle_tf demonstrates how to write a tf broadcaster and listener with the turtlesim.
+	pkgver = 0.2.2
+	pkgrel = 1
+	url = https://github.com/ros/geometry_tutorials/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-rospy
+	depends = ros-lunar-std-msgs
+	depends = ros-lunar-tf
+	depends = ros-lunar-turtlesim
+	source = ros-lunar-turtle-tf-0.2.2-0.tar.gz::https://github.com/ros-gbp/geometry_tutorials-release/archive/release/lunar/turtle_tf/0.2.2-0.tar.gz
+	sha256sums = 3c364ad729baace41c92583ab4216a30f9a204ab8625ae942f31ad9d5edcc3fc
+
+pkgname = ros-lunar-turtle-tf
+

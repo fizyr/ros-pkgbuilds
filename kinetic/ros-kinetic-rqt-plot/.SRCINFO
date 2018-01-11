@@ -1,0 +1,27 @@
+pkgbase = ros-kinetic-rqt-plot
+	pkgdesc = ROS - rqt_plot provides a GUI plugin visualizing numeric values in a 2D plot using different plotting backends.
+	pkgver = 0.4.8
+	pkgrel = 17
+	url = https://github.com/ros-visualization/rqt_plot/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-matplotlib
+	depends = python-numpy
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-gui-py-common
+	depends = ros-kinetic-qwt-dependency
+	depends = ros-kinetic-rosgraph
+	depends = ros-kinetic-rostopic
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-py-common
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-rqt-plot-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_plot-release/archive/release/kinetic/rqt_plot/0.4.8-0.tar.gz
+	sha256sums = a5af60dcd95878b5b9cb7c8195cecc9d7ecd88f1666ed22662d6d325acebaf9b
+
+pkgname = ros-kinetic-rqt-plot
+

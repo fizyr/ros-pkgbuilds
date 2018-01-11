@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-rosmsg
+	pkgdesc = ROS - rosmsg contains two command-line tools: rosmsg and rossrv.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rosmsg
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-std-msgs
+	depends = python-rospkg
+	depends = ros-kinetic-catkin
+	depends = ros-kinetic-genmsg
+	depends = ros-kinetic-genpy
+	depends = ros-kinetic-rosbag
+	depends = ros-kinetic-roslib
+	source = ros-kinetic-rosmsg-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosmsg/1.12.12-0.tar.gz
+	sha256sums = f3139120bebfc87962acb2896bad92789467e0ede26ff104cee4438316816fbe
+
+pkgname = ros-kinetic-rosmsg
+

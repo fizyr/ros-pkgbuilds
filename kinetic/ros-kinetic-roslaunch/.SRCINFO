@@ -1,0 +1,26 @@
+pkgbase = ros-kinetic-roslaunch
+	pkgdesc = ROS - roslaunch is a tool for easily launching multiple ROS nodes locally and remotely via SSH, as well as setting parameters on the Parameter Server.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/roslaunch
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rosbuild
+	depends = python-paramiko
+	depends = python-rospkg
+	depends = python-yaml
+	depends = ros-kinetic-rosclean
+	depends = ros-kinetic-rosgraph-msgs
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rosmaster
+	depends = ros-kinetic-rosout
+	depends = ros-kinetic-rosparam
+	depends = ros-kinetic-rosunit
+	source = ros-kinetic-roslaunch-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/roslaunch/1.12.12-0.tar.gz
+	sha256sums = dac78608867e594812ccb0575094eeeb5828bb1889f7aba97860724965fc1ab8
+
+pkgname = ros-kinetic-roslaunch
+

@@ -1,0 +1,23 @@
+pkgbase = ros-lunar-cv-bridge
+	pkgdesc = ROS - This contains CvBridge, which converts between ROS Image messages and OpenCV images.
+	pkgver = 1.12.7
+	pkgrel = 1
+	url = https://github.com/ros-perception/vision_opencv/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-numpy
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-rostest
+	depends = boost
+	depends = boost-libs
+	depends = opencv
+	depends = python
+	depends = ros-lunar-rosconsole
+	depends = ros-lunar-sensor-msgs
+	source = ros-lunar-cv-bridge-1.12.7-0.tar.gz::https://github.com/ros-gbp/vision_opencv-release/archive/release/lunar/cv_bridge/1.12.7-0.tar.gz
+	sha256sums = 136e001b8aff9974349e9219b8d672c2c39734c2f7e55d8e2fb20a53e80d4094
+
+pkgname = ros-lunar-cv-bridge
+

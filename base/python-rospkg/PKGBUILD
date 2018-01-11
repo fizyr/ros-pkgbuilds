@@ -1,0 +1,73 @@
+pkgname=(python-rospkg python-rospkg-modules python2-rospkg python2-rospkg-modules)
+pkgver=1.1.1
+pkgrel=2
+pkgdesc="ROS package library"
+url="http://wiki.ros.org/rospkg"
+makedepends=(ros-build-tools python-setuptools python2-setuptools)
+license=('BSD')
+arch=('any')
+source=("https://pypi.python.org/packages/9e/e0/a2951a7c0ac79b91f2666e1df499564e2b6a944924d7a7b2ae30f7a2d1bd/rospkg-$pkgver.tar.gz")
+sha256sums=('28b2ad62e23f4b7df14fe09db6dd5c37c097ea08138fd3100844e0fae7fcc75d')
+
+_dir="rospkg-$pkgver"
+
+prepare() {
+	rm -rf python python2
+	cp -aL "$_dir" python
+	cp -aL "$_dir" python2
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 python
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 2 python2
+}
+
+build() {
+	cd "$srcdir/python"  && python  setup.py build
+	cd "$srcdir/python2" && python2 setup.py build
+}
+
+_package_tools() {
+	local python="$1"
+	cd "$srcdir/$python"
+	SKIP_PYTHON_MODULES=1 $python setup.py install --prefix='/usr' --root="$pkgdir" --optimize=1
+}
+
+_package_modules() {
+	local python="$1"
+	cd "$srcdir/$python"
+	SKIP_PYTHON_SCRIPTS=1 $python setup.py install --prefix='/usr' --root="$pkgdir" --optimize=1
+}
+
+package_python-rospkg() {
+	depends=($pkgname-modules)
+	provides=(rospkg)
+	conflicts=(rospkg)
+
+	_package_tools python
+}
+
+package_python2-rospkg() {
+	depends=($pkgname-modules)
+	provides=(rospkg)
+	conflicts=(rospkg)
+
+	_package_tools python2
+}
+
+package_python-rospkg-modules() {
+	depends=(
+		python
+		python-yaml
+		lsb-release
+	)
+
+	_package_modules python
+}
+
+package_python2-rospkg-modules() {
+	depends=(
+		python2
+		python2-yaml
+		lsb-release
+	)
+
+	_package_modules python2
+}

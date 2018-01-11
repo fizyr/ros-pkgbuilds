@@ -1,0 +1,13 @@
+pkgbase = dynamixel-sdk
+	pkgdesc = SDK for communicating with Dynamixel motors (C and C++ bindings)
+	pkgver = 3.4.5.dr1
+	pkgrel = 1
+	url = https://github.com/ROBOTIS-GIT/DynamixelSDK
+	arch = x86_64
+	arch = i386
+	license = BSD
+	source = https://github.com/delftrobotics-forks/DynamixelSDK/archive/3.4.5.dr1.tar.gz
+	sha512sums = 4e5b25698fde970e4329768302667fa4caf01c816df24f2363d7acfb13ad8dc14923dbfefece57b14bd8111519368a739106f895a10e6b87abbb176049ae630a
+
+pkgname = dynamixel-sdk
+

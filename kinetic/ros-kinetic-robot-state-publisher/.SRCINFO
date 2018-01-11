@@ -1,0 +1,28 @@
+pkgbase = ros-kinetic-robot-state-publisher
+	pkgdesc = ROS - This package allows you to publish the state of a robot to tf.
+	pkgver = 1.13.4
+	pkgrel = 22
+	url = http://wiki.ros.org/robot_state_publisher
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = eigen3
+	depends = ros-kinetic-catkin
+	depends = ros-kinetic-kdl-parser
+	depends = ros-kinetic-orocos-kdl
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-rostime
+	depends = ros-kinetic-sensor-msgs
+	depends = ros-kinetic-tf
+	depends = ros-kinetic-tf2-kdl
+	depends = ros-kinetic-tf2-ros
+	depends = urdfdom-headers
+	source = ros-kinetic-robot-state-publisher-1.13.4-0.tar.gz::https://github.com/ros-gbp/robot_state_publisher-release/archive/release/kinetic/robot_state_publisher/1.13.4-0.tar.gz
+	sha256sums = b9c34a02ca457a5e3cdd256c805121eb1da7dfcc281d9de98fb188d04599809c
+
+pkgname = ros-kinetic-robot-state-publisher
+

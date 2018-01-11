@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-rosmake
+	pkgdesc = ROS - rosmake is a ros dependency aware build tool which can be used to build all dependencies in the correct order.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://ros.org/wiki/rosmake
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-catkin
+	source = ros-kinetic-rosmake-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosmake/1.13.6-0.tar.gz
+	sha256sums = 00a52f2dbaa664a03fed75154bf681fed41bc3d53b5dfc15789f305e97616681
+
+pkgname = ros-kinetic-rosmake
+

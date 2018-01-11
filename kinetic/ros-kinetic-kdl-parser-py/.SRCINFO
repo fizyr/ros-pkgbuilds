@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-kdl-parser-py
+	pkgdesc = ROS - The Kinematics and Dynamics Library (KDL) defines a tree structure to represent the kinematic and dynamic parameters of a robot mechanism.
+	pkgver = 1.12.10
+	pkgrel = 15
+	url = https://github.com/ros/robot_model/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-catkin-pkg
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-orocos-kdl
+	depends = ros-kinetic-python-orocos-kdl
+	depends = ros-kinetic-rostest
+	depends = ros-kinetic-urdf
+	depends = ros-kinetic-urdfdom-py
+	source = ros-kinetic-kdl-parser-py-1.12.10-0.tar.gz::https://github.com/ros-gbp/kdl_parser-release/archive/release/kinetic/kdl_parser_py/1.12.10-0.tar.gz
+	sha256sums = 32d2a9fd445cf9b06678df2ececb21ee387a2ea84536ede1fde170934dc41028
+
+pkgname = ros-kinetic-kdl-parser-py
+

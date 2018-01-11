@@ -1,0 +1,29 @@
+pkgbase = ros-kinetic-image-view
+	pkgdesc = ROS - A simple viewer for ROS image topics.
+	pkgver = 1.12.22
+	pkgrel = 1
+	url = http://www.ros.org/wiki/image_view
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = gtk2
+	depends = ros-kinetic-camera-calibration-parsers
+	depends = ros-kinetic-cv-bridge
+	depends = ros-kinetic-dynamic-reconfigure
+	depends = ros-kinetic-image-transport
+	depends = ros-kinetic-message-filters
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-nodelet
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-sensor-msgs
+	depends = ros-kinetic-std-srvs
+	depends = ros-kinetic-stereo-msgs
+	source = ros-kinetic-image-view-1.12.22-0.tar.gz::https://github.com/ros-gbp/image_pipeline-release/archive/release/kinetic/image_view/1.12.22-0.tar.gz
+	sha256sums = 8bb0f83781bfaf6bdd7365d4d9aef221a1154bf82f26f1f5ad28914eb8f5c6ae
+
+pkgname = ros-kinetic-image-view
+

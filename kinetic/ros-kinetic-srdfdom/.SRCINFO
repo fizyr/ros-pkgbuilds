@@ -1,0 +1,23 @@
+pkgbase = ros-kinetic-srdfdom
+	pkgdesc = ROS - Parser for Semantic Robot Description Format (SRDF).
+	pkgver = 0.4.2
+	pkgrel = 22
+	url = https://github.com/ros-planning/srdfdom
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = boost
+	depends = console-bridge
+	depends = ros-kinetic-cmake-modules
+	depends = ros-kinetic-urdf
+	depends = ros-kinetic-urdfdom-py
+	depends = tinyxml
+	depends = urdfdom-headers
+	source = ros-kinetic-srdfdom-0.4.2-1.tar.gz::https://github.com/ros-gbp/srdfdom-release/archive/release/kinetic/srdfdom/0.4.2-1.tar.gz
+	sha256sums = 2f7dfc30af56d54c3ca610f648ab68face2697f3d4e135410b749dae0d5d0d80
+
+pkgname = ros-kinetic-srdfdom
+

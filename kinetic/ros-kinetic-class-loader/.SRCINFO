@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-class-loader
+	pkgdesc = ROS - The class_loader package is a ROS-independent package for loading plugins during runtime and the foundation of the higher level ROS pluginlib library.
+	pkgver = 0.3.8
+	pkgrel = 2
+	url = https://github.com/ros/class_loader
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = console-bridge
+	depends = poco
+	depends = ros-kinetic-cmake-modules
+	source = ros-kinetic-class-loader-0.3.8-0.tar.gz::https://github.com/ros-gbp/class_loader-release/archive/release/kinetic/class_loader/0.3.8-0.tar.gz
+	sha256sums = 9a645d1442f6cdab1e0e53229fdc5ea0db933a7bf7cd8ff9690e6ba58511e960
+
+pkgname = ros-kinetic-class-loader
+

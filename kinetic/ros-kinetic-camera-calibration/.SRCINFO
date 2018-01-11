@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-camera-calibration
+	pkgdesc = ROS - camera_calibration allows easy calibration of monocular or stereo cameras using a checkerboard calibration target.
+	pkgver = 1.12.22
+	pkgrel = 1
+	url = http://www.ros.org/wiki/camera_calibration
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rostest
+	depends = ros-kinetic-cv-bridge
+	depends = ros-kinetic-image-geometry
+	depends = ros-kinetic-message-filters
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-sensor-msgs
+	depends = ros-kinetic-std-srvs
+	source = ros-kinetic-camera-calibration-1.12.22-0.tar.gz::https://github.com/ros-gbp/image_pipeline-release/archive/release/kinetic/camera_calibration/1.12.22-0.tar.gz
+	sha256sums = 6c324b16f19a279546e35af5464869cba4da8d4b79dd9be39cf7ddc8d66d53c3
+
+pkgname = ros-kinetic-camera-calibration
+

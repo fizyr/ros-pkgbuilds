@@ -1,0 +1,73 @@
+# Script generated with import_catkin_packages.py
+# For more information: https://github.com/bchretien/arch-ros-stacks
+pkgdesc="ROS - This package contains the ROS bindings for the tf2 library, for both Python and C++."
+url='http://www.ros.org/wiki/tf2_ros'
+
+pkgname='ros-kinetic-tf2-ros'
+pkgver='0.5.17'
+_pkgver_patch=0
+arch=('any')
+pkgrel=1
+license=('BSD')
+
+makedepends=(
+	'cmake'
+	'ros-build-tools'
+	'ros-kinetic-catkin'
+	'ros-kinetic-rostest'
+)
+depends=(
+	'ros-kinetic-actionlib'
+	'ros-kinetic-actionlib-msgs'
+	'ros-kinetic-geometry-msgs'
+	'ros-kinetic-message-filters'
+	'ros-kinetic-roscpp'
+	'ros-kinetic-rosgraph'
+	'ros-kinetic-rospy'
+	'ros-kinetic-std-msgs'
+	'ros-kinetic-tf2'
+	'ros-kinetic-tf2-msgs'
+	'ros-kinetic-tf2-py'
+	'ros-kinetic-xmlrpcpp'
+)
+
+# Git version (e.g. for debugging)
+# _tag=release/kinetic/tf2_ros/${pkgver}-${_pkgver_patch}
+# _dir=${pkgname}
+# source=("${_dir}"::"git+https://github.com/ros-gbp/geometry2-release.git"#tag=${_tag})
+# sha256sums=('SKIP')
+
+# Tarball version (faster download)
+_dir="geometry2-release-release-kinetic-tf2_ros-${pkgver}-${_pkgver_patch}"
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/tf2_ros/${pkgver}-${_pkgver_patch}.tar.gz")
+sha256sums=('7b79a58f519a9f9d1eca617f62b7cebadf3e32f565f64b9684383b0506e0bee5')
+
+build() {
+	# Use ROS environment variables
+	source /usr/share/ros-build-tools/clear-ros-env.sh
+	[ -f /opt/ros/kinetic/setup.bash ] && source /opt/ros/kinetic/setup.bash
+
+	# Create build directory
+	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+	cd ${srcdir}/build
+
+	# Fix Python2/Python3 conflicts
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 ${srcdir}/${_dir}
+
+	# Build project
+	cmake ${srcdir}/${_dir} \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DCATKIN_BUILD_BINARY_PACKAGE=ON \
+				-DCMAKE_INSTALL_PREFIX=/opt/ros/kinetic \
+				-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+				-DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+				-DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+				-DPYTHON_BASENAME=.cpython-36m \
+				-DSETUPTOOLS_DEB_LAYOUT=OFF
+	make
+}
+
+package() {
+	cd "${srcdir}/build"
+	make DESTDIR="${pkgdir}/" install
+}

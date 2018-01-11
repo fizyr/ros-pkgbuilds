@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-rosbuild
+	pkgdesc = ROS - rosbuild contains scripts for managing the CMake-based build system for ROS.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://ros.org/wiki/rosbuild
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = pkg-config
+	depends = ros-kinetic-catkin
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	source = ros-kinetic-rosbuild-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/rosbuild/1.13.6-0.tar.gz
+	sha256sums = f2bfbca788cfc29e6d88815c9e9ba1f37f55f4a693a110e7c22e615190084e55
+
+pkgname = ros-kinetic-rosbuild
+

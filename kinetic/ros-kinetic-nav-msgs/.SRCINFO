@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-nav-msgs
+	pkgdesc = ROS - nav_msgs defines the common messages used to interact with the navigation stack.
+	pkgver = 1.12.5
+	pkgrel = 18
+	url = http://wiki.ros.org/nav_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-actionlib-msgs
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-nav-msgs-1.12.5-0.tar.gz::https://github.com/ros-gbp/common_msgs-release/archive/release/kinetic/nav_msgs/1.12.5-0.tar.gz
+	sha256sums = 081c636f032385d4982b250b3dae6e1176d328d7c3ad59a40e547701a77b2a0b
+
+pkgname = ros-kinetic-nav-msgs
+

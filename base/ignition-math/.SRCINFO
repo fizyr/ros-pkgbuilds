@@ -1,0 +1,19 @@
+pkgbase = ignition-math
+	pkgdesc = Math classes and functions for robot applications
+	pkgver = 3.2.0
+	pkgrel = 3
+	url = http://ignitionrobotics.org/
+	arch = i686
+	arch = x86_64
+	groups = development
+	license = Apache
+	makedepends = cmake
+	makedepends = ruby-ronn
+	makedepends = pkg-config>=0.28
+	provides = ignition-math2
+	replaces = ignition-math2
+	source = https://bitbucket.org/ignitionrobotics/ign-math/get/ignition-math3_3.2.0.tar.bz2
+	sha256sums = 929794ababed10c92d7217973e1d268a9de4a51dae80c401c6d1333ff65f7f89
+
+pkgname = ignition-math
+

@@ -1,0 +1,22 @@
+pkgbase = ros-lunar-rqt-launch
+	pkgdesc = ROS - This rqt plugin ROS package provides easy view of .launch files.
+	pkgver = 0.4.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_launch/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-python-qt-binding
+	depends = ros-lunar-roslaunch
+	depends = ros-lunar-rospy
+	depends = ros-lunar-rqt-console
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	depends = ros-lunar-rqt-py-common
+	source = ros-lunar-rqt-launch-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_launch-release/archive/release/lunar/rqt_launch/0.4.8-0.tar.gz
+	sha256sums = 5dd7364599b1dca58adf893b2b068320fd49cfc70838d4837ead7d7917da1c1a
+
+pkgname = ros-lunar-rqt-launch
+

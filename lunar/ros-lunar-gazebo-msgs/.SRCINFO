@@ -1,0 +1,22 @@
+pkgbase = ros-lunar-gazebo-msgs
+	pkgdesc = ROS - Message and service data structures for interacting with Gazebo from ROS.
+	pkgver = 2.7.3
+	pkgrel = 1
+	url = https://github.com/ros-simulation/gazebo_ros_pkgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-sensor-msgs
+	depends = ros-lunar-std-msgs
+	depends = ros-lunar-std-srvs
+	depends = ros-lunar-trajectory-msgs
+	source = ros-lunar-gazebo-msgs-2.7.3-0.tar.gz::https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/lunar/gazebo_msgs/2.7.3-0.tar.gz
+	sha256sums = 1c476daab5db78b888bc3bc8b674c04b21d0fa15149d54fdf8e07a1d2340f02a
+
+pkgname = ros-lunar-gazebo-msgs
+

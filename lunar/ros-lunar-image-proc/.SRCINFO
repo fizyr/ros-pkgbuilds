@@ -1,0 +1,27 @@
+pkgbase = ros-lunar-image-proc
+	pkgdesc = ROS - Single image rectification and color processing.
+	pkgver = 1.12.21
+	pkgrel = 1
+	url = http://www.ros.org/wiki/image_proc
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-camera-calibration-parsers
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-rostest
+	depends = boost
+	depends = boost-libs
+	depends = ros-lunar-cv-bridge
+	depends = ros-lunar-dynamic-reconfigure
+	depends = ros-lunar-image-geometry
+	depends = ros-lunar-image-transport
+	depends = ros-lunar-nodelet
+	depends = ros-lunar-nodelet-topic-tools
+	depends = ros-lunar-roscpp
+	depends = ros-lunar-sensor-msgs
+	source = ros-lunar-image-proc-1.12.21-0.tar.gz::https://github.com/ros-gbp/image_pipeline-release/archive/release/lunar/image_proc/1.12.21-0.tar.gz
+	sha256sums = aadb5778e58870aa448cf09cec3509776c7a9911f8d09792d748d5e9e4f2c19e
+
+pkgname = ros-lunar-image-proc
+

@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-std-srvs
+	pkgdesc = ROS - Common service definitions.
+	pkgver = 1.11.2
+	pkgrel = 24
+	url = h
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	source = ros-kinetic-std-srvs-1.11.2-0.tar.gz::https://github.com/ros-gbp/ros_comm_msgs-release/archive/release/kinetic/std_srvs/1.11.2-0.tar.gz
+	sha256sums = 223955e2e05e6d86f5c1f57d00c55e4a2f6ac3f9060f727ee512b2602c253184
+
+pkgname = ros-kinetic-std-srvs
+

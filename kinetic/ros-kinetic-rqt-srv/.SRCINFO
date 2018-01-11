@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-rqt-srv
+	pkgdesc = ROS - A Python GUI plugin for introspecting available ROS message types.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_srv/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-rosmsg
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-msg
+	source = ros-kinetic-rqt-srv-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_srv-release/archive/release/kinetic/rqt_srv/0.4.8-0.tar.gz
+	sha256sums = cb789c7d969ed56335b19a75ca8d20918953ed5bbb1a3f978b593b0900f7e6b9
+
+pkgname = ros-kinetic-rqt-srv
+

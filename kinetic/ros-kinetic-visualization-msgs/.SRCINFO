@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-visualization-msgs
+	pkgdesc = ROS - visualization_msgs is a set of messages used by higher level packages, such as rviz, that deal in visualization-specific data.
+	pkgver = 1.12.5
+	pkgrel = 18
+	url = http://ros.org/wiki/visualization_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-visualization-msgs-1.12.5-0.tar.gz::https://github.com/ros-gbp/common_msgs-release/archive/release/kinetic/visualization_msgs/1.12.5-0.tar.gz
+	sha256sums = 13efc590b2114f9ffca60292b9947716e6294a6f579d5e2237c844fcd74daeb5
+
+pkgname = ros-kinetic-visualization-msgs
+

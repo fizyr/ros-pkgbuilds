@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-tf2
+	pkgdesc = ROS - tf2 is the second generation of the transform library, which lets the user keep track of multiple coordinate frames over time.
+	pkgver = 0.5.17
+	pkgrel = 1
+	url = http://www.ros.org/wiki/tf2
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = console-bridge
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-rostime
+	depends = ros-kinetic-tf2-msgs
+	source = ros-kinetic-tf2-0.5.17-0.tar.gz::https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/tf2/0.5.17-0.tar.gz
+	sha256sums = 96d727feb495eb40f3273d3bc88b33c9716ec2c87b72bcd8817c1305bc79acfd
+
+pkgname = ros-kinetic-tf2
+

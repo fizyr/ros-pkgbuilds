@@ -1,0 +1,26 @@
+pkgbase = ros-lunar-roslaunch
+	pkgdesc = ROS - roslaunch is a tool for easily launching multiple ROS nodes locally and remotely via SSH, as well as setting parameters on the Parameter Server.
+	pkgver = 1.13.5
+	pkgrel = 1
+	url = http://ros.org/wiki/roslaunch
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = ros-lunar-rosbuild
+	depends = python-paramiko
+	depends = python-rospkg
+	depends = python-yaml
+	depends = ros-lunar-rosclean
+	depends = ros-lunar-rosgraph-msgs
+	depends = ros-lunar-roslib
+	depends = ros-lunar-rosmaster
+	depends = ros-lunar-rosout
+	depends = ros-lunar-rosparam
+	depends = ros-lunar-rosunit
+	source = ros-lunar-roslaunch-1.13.5-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/lunar/roslaunch/1.13.5-0.tar.gz
+	sha256sums = 9c67bf2fe56a3e5c20d864140be03e293b9375ef826c5c31049fc9832d3f6e67
+
+pkgname = ros-lunar-roslaunch
+

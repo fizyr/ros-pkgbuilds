@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-test-diagnostic-aggregator
+	pkgdesc = ROS - Basic diagnostic_aggregator tests are in the.
+	pkgver = 1.9.2
+	pkgrel = 18
+	url = http://ros.org/wiki/test_diagnostic_aggregator
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-diagnostic-aggregator
+	depends = ros-kinetic-diagnostic-msgs
+	depends = ros-kinetic-pluginlib
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rostest
+	source = ros-kinetic-test-diagnostic-aggregator-1.9.2-0.tar.gz::https://github.com/ros-gbp/diagnostics-release/archive/release/kinetic/test_diagnostic_aggregator/1.9.2-0.tar.gz
+	sha256sums = bb050bf01d10f2faae9edf87c84879111cde44f0751e7b93374802a6ab9fb862
+
+pkgname = ros-kinetic-test-diagnostic-aggregator
+

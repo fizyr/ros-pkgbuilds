@@ -1,0 +1,73 @@
+# Script generated with import_catkin_packages.py
+# For more information: https://github.com/bchretien/arch-ros-stacks
+pkgdesc="ROS - The actionlib stack provides a standardized interface for interfacing with preemptable tasks."
+url='https://github.com/ros/actionlib'
+
+pkgname='ros-kinetic-actionlib'
+pkgver='1.11.11'
+_pkgver_patch=0
+arch=('any')
+pkgrel=1
+license=('BSD')
+
+makedepends=(
+	'cmake'
+	'ros-build-tools'
+	'ros-kinetic-catkin'
+	'ros-kinetic-rosnode'
+)
+depends=(
+	'boost'
+	'boost-libs'
+	'ros-kinetic-actionlib-msgs'
+	'ros-kinetic-message-generation'
+	'ros-kinetic-message-runtime'
+	'ros-kinetic-roscpp'
+	'ros-kinetic-roslib'
+	'ros-kinetic-rospy'
+	'ros-kinetic-rostest'
+	'ros-kinetic-rostopic'
+	'ros-kinetic-std-msgs'
+	'wxpython'
+)
+
+# Git version (e.g. for debugging)
+# _tag=release/kinetic/actionlib/${pkgver}-${_pkgver_patch}
+# _dir=${pkgname}
+# source=("${_dir}"::"git+https://github.com/ros-gbp/actionlib-release.git"#tag=${_tag})
+# sha256sums=('SKIP')
+
+# Tarball version (faster download)
+_dir="actionlib-release-release-kinetic-actionlib-${pkgver}-${_pkgver_patch}"
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/actionlib-release/archive/release/kinetic/actionlib/${pkgver}-${_pkgver_patch}.tar.gz")
+sha256sums=('328a2bbb5befe4855eb0628caa0d8fb642a47ce976492c632d8d2fb8399f541c')
+
+build() {
+	# Use ROS environment variables
+	source /usr/share/ros-build-tools/clear-ros-env.sh
+	[ -f /opt/ros/kinetic/setup.bash ] && source /opt/ros/kinetic/setup.bash
+
+	# Create build directory
+	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+	cd ${srcdir}/build
+
+	# Fix Python2/Python3 conflicts
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 ${srcdir}/${_dir}
+
+	# Build project
+	cmake ${srcdir}/${_dir} \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DCATKIN_BUILD_BINARY_PACKAGE=ON \
+				-DCMAKE_INSTALL_PREFIX=/opt/ros/kinetic \
+				-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+				-DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+				-DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+				-DPYTHON_BASENAME=.cpython-36m \
+				-DSETUPTOOLS_DEB_LAYOUT=OFF
+	make
+}
+
+package() {
+	cd "${srcdir}/build"
+	make DESTDIR="${pkgdir}/" install
+}

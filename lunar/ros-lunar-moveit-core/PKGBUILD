@@ -1,0 +1,92 @@
+# Script generated with import_catkin_packages.py
+# For more information: https://github.com/bchretien/arch-ros-stacks
+pkgdesc="ROS - Core libraries used by MoveIt!."
+url='https://github.com/ros-planning/moveit'
+
+pkgname='ros-lunar-moveit-core'
+pkgver='0.9.11'
+_pkgver_patch=0
+arch=('any')
+pkgrel=1
+license=('BSD')
+
+makedepends=(
+	'cmake'
+	'pkg-config'
+	'ros-build-tools'
+	'ros-lunar-angles'
+	'ros-lunar-catkin'
+	'ros-lunar-moveit-resources'
+	'ros-lunar-orocos-kdl'
+	'ros-lunar-rosunit'
+	'ros-lunar-tf-conversions'
+)
+depends=(
+	'assimp'
+	'boost'
+	'boost-libs'
+	'console-bridge'
+	'eigen3'
+	'fcl'
+	'octomap'
+	'ros-lunar-eigen-conversions'
+	'ros-lunar-eigen-stl-containers'
+	'ros-lunar-geometric-shapes'
+	'ros-lunar-geometry-msgs'
+	'ros-lunar-kdl-parser'
+	'ros-lunar-moveit-msgs'
+	'ros-lunar-octomap-msgs'
+	'ros-lunar-random-numbers'
+	'ros-lunar-roslib'
+	'ros-lunar-rostime'
+	'ros-lunar-sensor-msgs'
+	'ros-lunar-shape-msgs'
+	'ros-lunar-srdfdom'
+	'ros-lunar-std-msgs'
+	'ros-lunar-trajectory-msgs'
+	'ros-lunar-urdf'
+	'ros-lunar-visualization-msgs'
+	'urdfdom'
+	'urdfdom-headers'
+)
+
+# Git version (e.g. for debugging)
+# _tag=release/lunar/moveit_core/${pkgver}-${_pkgver_patch}
+# _dir=${pkgname}
+# source=("${_dir}"::"git+https://github.com/ros-gbp/moveit-release.git"#tag=${_tag})
+# sha256sums=('SKIP')
+
+# Tarball version (faster download)
+_dir="moveit-release-release-lunar-moveit_core-${pkgver}-${_pkgver_patch}"
+source=("${pkgname}-${pkgver}-${_pkgver_patch}.tar.gz"::"https://github.com/ros-gbp/moveit-release/archive/release/lunar/moveit_core/${pkgver}-${_pkgver_patch}.tar.gz")
+sha256sums=('cca21a62b698f7846ca1354bd151899c68a0b0d5b3c4942e6ba6f2fd0ccac35d')
+
+build() {
+	# Use ROS environment variables
+	source /usr/share/ros-build-tools/clear-ros-env.sh
+	[ -f /opt/ros/lunar/setup.bash ] && source /opt/ros/lunar/setup.bash
+
+	# Create build directory
+	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
+	cd ${srcdir}/build
+
+	# Fix Python2/Python3 conflicts
+	/usr/share/ros-build-tools/fix-python-scripts.sh -v 3 ${srcdir}/${_dir}
+
+	# Build project
+	cmake ${srcdir}/${_dir} \
+				-DCMAKE_BUILD_TYPE=Release \
+				-DCATKIN_BUILD_BINARY_PACKAGE=ON \
+				-DCMAKE_INSTALL_PREFIX=/opt/ros/lunar \
+				-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+				-DPYTHON_INCLUDE_DIR=/usr/include/python3.6m \
+				-DPYTHON_LIBRARY=/usr/lib/libpython3.6m.so \
+				-DPYTHON_BASENAME=.cpython-36m \
+				-DSETUPTOOLS_DEB_LAYOUT=OFF
+	make
+}
+
+package() {
+	cd "${srcdir}/build"
+	make DESTDIR="${pkgdir}/" install
+}

@@ -1,0 +1,17 @@
+pkgbase = ros-lunar-genpy
+	pkgdesc = ROS - Python ROS message and service generators.
+	pkgver = 0.6.7
+	pkgrel = 1
+	url = https://github.com/ros/genpy
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-yaml
+	depends = ros-lunar-genmsg
+	source = ros-lunar-genpy-0.6.7-0.tar.gz::https://github.com/ros-gbp/genpy-release/archive/release/lunar/genpy/0.6.7-0.tar.gz
+	sha256sums = 66779fdc019ccb931dc620dbc6b1eaaaac1c8b7251826dbe06441eb6d5536b26
+
+pkgname = ros-lunar-genpy
+

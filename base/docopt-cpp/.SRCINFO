@@ -1,0 +1,14 @@
+pkgbase = docopt-cpp
+	pkgdesc = C++11 port of docopt
+	pkgver = 0.6.2
+	pkgrel = 1
+	url = https://github.com/docopt/docopt.cpp/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	source = docopt-cpp-0.6.2.tar.gz::https://github.com/docopt/docopt.cpp/archive/v0.6.2.tar.gz
+	sha512sums = 63b145d47032ecbfcc50378a6ff327a0095f84af5e6793fce45a17fa0f6af961135edd436ad7e67192dba5bd2a70f1510f442ce2151460a9bf0e50da53c1ce52
+
+pkgname = docopt-cpp
+

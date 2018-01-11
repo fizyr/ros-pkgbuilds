@@ -1,0 +1,63 @@
+# Maintainer: Maarten de Vries <maarten@de-vri.es>
+# Contributor: Thibaud Hulin <thibaud.hulin.cl.atgmail.com>
+
+pkgname=visp
+pkgver=3.1.0.b1
+pkgrel=6
+pkgdesc="A modular library for visual tracking and visual servoing"
+arch=('i686' 'x86_64')
+url="http://www.irisa.fr/lagadic/visp/"
+license=('GPL2' 'custom:ViSP Professional Edition License')
+depends=('gsl' 'libjpeg' 'libpng' 'lapack' 'opencv' 'libx11' 'zlib')
+makedepends=('cmake')
+_commit=91ce3fc853b39203f2a4298570bf5cf6351ff42f
+source=("$pkgname-$pkgver.tar.gz::https://github.com/lagadic/visp/archive/$_commit.tar.gz")
+sha512sums=('42a397a4b83f5bef520c287d71c850031b8ace061a53ae0fa6206c9103de9c899b00f7191e6250c2d43e952580c765606576c626c072c5bf3d6d6335d74e6e06')
+
+prepare() {
+	rm -rf "$srcdir/build"
+	mkdir "$srcdir/build"
+	cd "$srcdir/build"
+
+	cat > "$srcdir/COPYING" << 'EOF'
+ViSP software is available under two different licenses:
+the ViSP GNU GPL version 2 for developing open source software under the terms of the GPL license,
+and the ViSP Commercial Developer License for commercial use.
+
+The ViSP Professional Edition License is the appropriate version to use for the development of proprietary software.
+This version is for developers who do not want to share the source code with others,
+or otherwise do not comply with the terms of the GNU GPL version 2.0.
+In other terms, with the Professional Edition License you avoid the licensing restrictions of the GPL.
+If you are interested by this license, contact visp@inria.fr.
+EOF
+
+	cmake "$srcdir/$pkgname-$_commit" \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR="lib"\
+		-DBUILD_EXAMPLES=OFF \
+		-DBUILD_TUTORIALS=OFF \
+		-DBUILD_TESTS=OFF \
+		-DBUILD_DEMOS=OFF \
+		-DUSE_CPP11=ON \
+		-DUSE_COIN3D=OFF \
+		-DUSE_DC1394=OFF \
+		-DUSE_FFMPEG=OFF \
+		-DUSE_GTK2=OFF \
+		-DUSE_LIBUSB_1=OFF \
+		-DUSE_OGRE=OFF \
+		-DUSE_OPENMP=ON \
+		-DUSE_SOQT=OFF \
+		-DUSE_V4L2=OFF \
+		-DUSE_XML2=OFF
+}
+
+build() {
+	make -C "$srcdir/build"
+}
+
+package() {
+	make -C "$srcdir/build" DESTDIR="$pkgdir/" install
+	install -Dm644 "$srcdir/COPYING" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+

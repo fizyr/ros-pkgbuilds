@@ -1,0 +1,16 @@
+pkgbase = ros-lunar-convex-decomposition
+	pkgdesc = ROS - Convex Decomposition Tool for Robot Model.
+	pkgver = 0.1.11
+	pkgrel = 1
+	url = http://kforge.ros.org/robotmodel/convex_decomposition
+	arch = any
+	license = MIT
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = unzip
+	source = ros-lunar-convex-decomposition-0.1.11-0.tar.gz::https://github.com/ros-gbp/convex_decomposition-release/archive/release/lunar/convex_decomposition/0.1.11-0.tar.gz
+	sha256sums = e556a6673f9bfa83ba4b7a6ee9a46adb0a339497879da49a371b369417fe9276
+
+pkgname = ros-lunar-convex-decomposition
+

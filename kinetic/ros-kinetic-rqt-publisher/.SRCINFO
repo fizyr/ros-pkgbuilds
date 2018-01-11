@@ -1,0 +1,23 @@
+pkgbase = ros-kinetic-rqt-publisher
+	pkgdesc = ROS - rqt_publisher provides a GUI plugin for publishing arbitrary messages with fixed or computed field values.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_publisher/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-qt-gui-py-common
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rosmsg
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-py-common
+	source = ros-kinetic-rqt-publisher-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_publisher-release/archive/release/kinetic/rqt_publisher/0.4.8-0.tar.gz
+	sha256sums = 3d8ea88fda2a8289e97aed69e0d98e0ac9d96c92f6b16ddf77c0b38a3902b33f
+
+pkgname = ros-kinetic-rqt-publisher
+

@@ -1,0 +1,24 @@
+pkgbase = ros-kinetic-rosbag-storage
+	pkgdesc = ROS - This is a set of tools for recording from and playing back ROS message without relying on the ROS client library.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://www.ros.org/
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = boost
+	depends = boost-libs
+	depends = bzip2
+	depends = console-bridge
+	depends = ros-kinetic-cpp-common
+	depends = ros-kinetic-roscpp-serialization
+	depends = ros-kinetic-roscpp-traits
+	depends = ros-kinetic-roslz4
+	depends = ros-kinetic-rostime
+	source = ros-kinetic-rosbag-storage-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosbag_storage/1.12.12-0.tar.gz
+	sha256sums = 0f1e0e3fb6286c5973bcd46ad64533910dc8fd2d97e07db9791c628fb0980d5f
+
+pkgname = ros-kinetic-rosbag-storage
+

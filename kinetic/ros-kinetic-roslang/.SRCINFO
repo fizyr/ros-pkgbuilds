@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-roslang
+	pkgdesc = ROS - roslang is a common package that all ROS client libraries depend on.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://ros.org/wiki/roslang
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-catkin
+	depends = ros-kinetic-genmsg
+	source = ros-kinetic-roslang-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/roslang/1.13.6-0.tar.gz
+	sha256sums = 1716a671f99375fa1b8ecc9f11e14e884cf3aadc670bc2197a46238d249a7264
+
+pkgname = ros-kinetic-roslang
+

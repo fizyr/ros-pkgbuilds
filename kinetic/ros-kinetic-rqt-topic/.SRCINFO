@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-rqt-topic
+	pkgdesc = ROS - rqt_topic provides a GUI plugin for displaying debug information about ROS topics including publishers, subscribers, publishing rate, and ROS Messages.
+	pkgver = 0.4.10
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_topic/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-rostopic
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-rqt-topic-0.4.10-0.tar.gz::https://github.com/ros-gbp/rqt_topic-release/archive/release/kinetic/rqt_topic/0.4.10-0.tar.gz
+	sha256sums = 98fd009283ddeb6dad4e8b3e9f7a858efba4777c20b7219ef770607edf0282de
+
+pkgname = ros-kinetic-rqt-topic
+

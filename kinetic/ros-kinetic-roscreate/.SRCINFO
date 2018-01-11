@@ -1,0 +1,16 @@
+pkgbase = ros-kinetic-roscreate
+	pkgdesc = ROS - roscreate contains a tool that assists in the creation of ROS filesystem resources.
+	pkgver = 1.13.6
+	pkgrel = 1
+	url = http://ros.org/wiki/roscreate
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	source = ros-kinetic-roscreate-1.13.6-0.tar.gz::https://github.com/ros-gbp/ros-release/archive/release/kinetic/roscreate/1.13.6-0.tar.gz
+	sha256sums = bb3470f2d8cbf83e79593b0945d1e5763b9446e8dc5c858583dd9313ebc6b144
+
+pkgname = ros-kinetic-roscreate
+

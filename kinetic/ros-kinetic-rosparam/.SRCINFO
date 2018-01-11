@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-rosparam
+	pkgdesc = ROS - rosparam contains the rosparam command-line tool for getting and setting ROS Parameters on the Parameter Server using YAML-encoded files.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rosparam
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-yaml
+	depends = ros-kinetic-rosgraph
+	source = ros-kinetic-rosparam-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosparam/1.12.12-0.tar.gz
+	sha256sums = efe2ea3127ca9af1d6c5553ecee875f9885c45561e6a3f5e70552b4cb4a5d22e
+
+pkgname = ros-kinetic-rosparam
+

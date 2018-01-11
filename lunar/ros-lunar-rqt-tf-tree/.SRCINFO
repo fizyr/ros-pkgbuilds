@@ -1,0 +1,27 @@
+pkgbase = ros-lunar-rqt-tf-tree
+	pkgdesc = ROS - rqt_tf_tree provides a GUI plugin for visualizing the ROS TF frame tree.
+	pkgver = 0.5.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_tf_tree/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-mock
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-rospkg
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-python-qt-binding
+	depends = ros-lunar-qt-dotgraph
+	depends = ros-lunar-rospy
+	depends = ros-lunar-rqt-graph
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	depends = ros-lunar-tf2
+	depends = ros-lunar-tf2-msgs
+	depends = ros-lunar-tf2-ros
+	source = ros-lunar-rqt-tf-tree-0.5.8-0.tar.gz::https://github.com/ros-gbp/rqt_tf_tree-release/archive/release/lunar/rqt_tf_tree/0.5.8-0.tar.gz
+	sha256sums = e89829caa836cd7426d696ae8a178441faa1cf66fc0918448fd1b399437a2394
+
+pkgname = ros-lunar-rqt-tf-tree
+

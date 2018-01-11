@@ -1,0 +1,21 @@
+pkgbase = ros-lunar-rqt-robot-steering
+	pkgdesc = ROS - rqt_robot_steering provides a GUI plugin for steering a robot using Twist messages.
+	pkgver = 0.5.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_robot_steering/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-rospkg
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-python-qt-binding
+	depends = ros-lunar-rostopic
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	source = ros-lunar-rqt-robot-steering-0.5.8-0.tar.gz::https://github.com/ros-gbp/rqt_robot_steering-release/archive/release/lunar/rqt_robot_steering/0.5.8-0.tar.gz
+	sha256sums = 0396eb0c71fd79f977ffcacdece8febc84eb63ba89dd6caab00a9557f19010af
+
+pkgname = ros-lunar-rqt-robot-steering
+

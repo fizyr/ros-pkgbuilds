@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-sensor-msgs
+	pkgdesc = ROS - This package defines messages for commonly used sensors, including cameras and scanning laser rangefinders.
+	pkgver = 1.12.5
+	pkgrel = 18
+	url = http://ros.org/wiki/sensor_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-message-generation
+	depends = ros-kinetic-message-runtime
+	depends = ros-kinetic-std-msgs
+	source = ros-kinetic-sensor-msgs-1.12.5-0.tar.gz::https://github.com/ros-gbp/common_msgs-release/archive/release/kinetic/sensor_msgs/1.12.5-0.tar.gz
+	sha256sums = 7fece41e988080526210f19d552d5774ec314e2ca09aa0ba5a3ecfccd201ed4a
+
+pkgname = ros-kinetic-sensor-msgs
+

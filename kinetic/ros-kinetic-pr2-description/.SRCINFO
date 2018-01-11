@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-pr2-description
+	pkgdesc = ROS - This package contains the description (mechanical, kinematic, visual, etc.) of the PR2 robot.
+	pkgver = 1.12.0
+	pkgrel = 26
+	url = https://github.com/PR2/pr2_common/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = gtest
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = urdfdom
+	depends = ros-kinetic-convex-decomposition
+	depends = ros-kinetic-ivcon
+	depends = ros-kinetic-xacro
+	source = ros-kinetic-pr2-description-1.12.0-0.tar.gz::https://github.com/pr2-gbp/pr2_common-release/archive/release/kinetic/pr2_description/1.12.0-0.tar.gz
+	sha256sums = f3d47c61cf5fb3e93f287315b27476a787a1d0ce1074cf7a1d4c641b3a54fdf6
+
+pkgname = ros-kinetic-pr2-description
+

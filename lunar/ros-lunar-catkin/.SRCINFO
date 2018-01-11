@@ -1,0 +1,21 @@
+pkgbase = ros-lunar-catkin
+	pkgdesc = ROS - Low-level build system macros and infrastructure for ROS.
+	pkgver = 0.7.8
+	pkgrel = 2
+	url = https://github.com/ros/catkin
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = python-mock
+	makedepends = python-nose
+	makedepends = ros-build-tools
+	depends = gtest
+	depends = python
+	depends = python-catkin-pkg
+	depends = python-empy
+	depends = python-nose
+	source = ros-lunar-catkin-0.7.8-0.tar.gz::https://github.com/ros-gbp/catkin-release/archive/release/lunar/catkin/0.7.8-0.tar.gz
+	sha256sums = 2057edf73b042a304447c7433e97056f07a32e74a98a01b40ecd06064f1603b9
+
+pkgname = ros-lunar-catkin
+

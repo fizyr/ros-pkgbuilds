@@ -1,0 +1,24 @@
+pkgbase = python2-pygraphviz
+	pkgdesc = PyGraphviz is a Python interface to the Graphviz graph layout and visualization package.
+	pkgver = 1.4rc1
+	pkgrel = 4
+	url = https://networkx.lanl.gov/pygraphviz
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	license = LGPL
+	makedepends = graphviz
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	source = https://github.com/pygraphviz/pygraphviz/archive/pygraphviz-1.4rc1.tar.gz
+	md5sums = 308df30fd4dbd7708a3e750728541984
+
+pkgname = python-pygraphviz
+	depends = python3
+	depends = graphviz
+
+pkgname = python2-pygraphviz
+	depends = python2
+	depends = graphviz
+

@@ -1,0 +1,23 @@
+pkgbase = ros-kinetic-usb-cam
+	pkgdesc = ROS - A ROS Driver for V4L USB Cameras.
+	pkgver = 0.3.6
+	pkgrel = 1
+	url = https://github.com/bosch-ros-pkg/usb_cam
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ffmpeg
+	depends = ros-kinetic-camera-info-manager
+	depends = ros-kinetic-image-transport
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-sensor-msgs
+	depends = ros-kinetic-std-msgs
+	depends = ros-kinetic-std-srvs
+	depends = v4l-utils
+	source = ros-kinetic-usb-cam-0.3.6.tar.gz::https://github.com/ros-drivers/usb_cam/archive/0.3.6.tar.gz
+	sha256sums = 44e939df8acfa8a2902bbca94c89b308fc4a2a9d520a0268d6a625e11fd9b929
+
+pkgname = ros-kinetic-usb-cam
+

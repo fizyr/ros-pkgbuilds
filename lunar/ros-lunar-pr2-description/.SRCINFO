@@ -1,0 +1,20 @@
+pkgbase = ros-lunar-pr2-description
+	pkgdesc = ROS - This package contains the description (mechanical, kinematic, visual, etc.) of the PR2 robot.
+	pkgver = 1.12.0
+	pkgrel = 1
+	url = https://github.com/PR2/pr2_common/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = gtest
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	makedepends = urdfdom
+	depends = ros-lunar-convex-decomposition
+	depends = ros-lunar-ivcon
+	depends = ros-lunar-xacro
+	source = ros-lunar-pr2-description-1.12.0-0.tar.gz::https://github.com/ros-gbp/pr2_common-release/archive/release/lunar/pr2_description/1.12.0-0.tar.gz
+	sha256sums = db10272a398d66a53da3b3d80dda6dd69bd59394c977461cc5c88bfc36c7652a
+
+pkgname = ros-lunar-pr2-description
+

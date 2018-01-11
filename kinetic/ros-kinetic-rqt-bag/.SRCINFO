@@ -1,0 +1,24 @@
+pkgbase = ros-kinetic-rqt-bag
+	pkgdesc = ROS - rqt_bag provides a GUI plugin for displaying and replaying ROS bag files.
+	pkgver = 0.4.11
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_bag/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-python-qt-binding
+	depends = ros-kinetic-rosbag
+	depends = ros-kinetic-rosgraph-msgs
+	depends = ros-kinetic-roslib
+	depends = ros-kinetic-rosnode
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	source = ros-kinetic-rqt-bag-0.4.11-0.tar.gz::https://github.com/ros-gbp/rqt_bag-release/archive/release/kinetic/rqt_bag/0.4.11-0.tar.gz
+	sha256sums = bfd3a69f3a4f6ef4e613405e9d92c88ae0384b8cc6a44a0eee04c55e9a9c0b01
+
+pkgname = ros-kinetic-rqt-bag
+

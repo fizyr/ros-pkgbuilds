@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-rosdiagnostic
+	pkgdesc = ROS - Command to print aggregated diagnostic contents to the command line.
+	pkgver = 1.9.2
+	pkgrel = 13
+	url = http://www.ros.org/
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-diagnostic-msgs
+	depends = ros-kinetic-rospy
+	source = ros-kinetic-rosdiagnostic-1.9.2-0.tar.gz::https://github.com/ros-gbp/diagnostics-release/archive/release/kinetic/rosdiagnostic/1.9.2-0.tar.gz
+	sha256sums = a58693bb3984c69c74f60929d8f159707a521cb3591bcf61a989c4d65581e776
+
+pkgname = ros-kinetic-rosdiagnostic
+

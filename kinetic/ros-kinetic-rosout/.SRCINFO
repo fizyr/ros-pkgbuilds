@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-rosout
+	pkgdesc = ROS - System-wide logging mechanism for messages sent to the /rosout topic.
+	pkgver = 1.12.12
+	pkgrel = 1
+	url = http://ros.org/wiki/rosout
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-rosgraph-msgs
+	source = ros-kinetic-rosout-1.12.12-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/kinetic/rosout/1.12.12-0.tar.gz
+	sha256sums = fcf99cdd39d659f5b8e951006c91f82a0de704643eae0b068a94f23012337025
+
+pkgname = ros-kinetic-rosout
+

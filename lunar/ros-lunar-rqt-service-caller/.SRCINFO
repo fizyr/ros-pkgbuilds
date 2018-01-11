@@ -1,0 +1,20 @@
+pkgbase = ros-lunar-rqt-service-caller
+	pkgdesc = ROS - rqt_service_caller provides a GUI plugin for calling arbitrary services.
+	pkgver = 0.4.8
+	pkgrel = 1
+	url = https://github.com/ros-visualization/rqt_service_caller/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = python-rospkg
+	depends = ros-lunar-rosservice
+	depends = ros-lunar-rqt-gui
+	depends = ros-lunar-rqt-gui-py
+	depends = ros-lunar-rqt-py-common
+	source = ros-lunar-rqt-service-caller-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_service_caller-release/archive/release/lunar/rqt_service_caller/0.4.8-0.tar.gz
+	sha256sums = 18fcd20687fcba12fd639a3c35c4717d2198116bf6c27bc0c0c1d94c1904b5b6
+
+pkgname = ros-lunar-rqt-service-caller
+

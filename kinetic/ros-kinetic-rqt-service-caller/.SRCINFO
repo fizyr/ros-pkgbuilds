@@ -1,0 +1,20 @@
+pkgbase = ros-kinetic-rqt-service-caller
+	pkgdesc = ROS - rqt_service_caller provides a GUI plugin for calling arbitrary services.
+	pkgver = 0.4.8
+	pkgrel = 16
+	url = https://github.com/ros-visualization/rqt_service_caller/issues
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = python-rospkg
+	depends = ros-kinetic-rosservice
+	depends = ros-kinetic-rqt-gui
+	depends = ros-kinetic-rqt-gui-py
+	depends = ros-kinetic-rqt-py-common
+	source = ros-kinetic-rqt-service-caller-0.4.8-0.tar.gz::https://github.com/ros-gbp/rqt_service_caller-release/archive/release/kinetic/rqt_service_caller/0.4.8-0.tar.gz
+	sha256sums = 61657a9e4a20a6684ffcde345832afc8603bb74c7aedb8cb2079c8a30cb48bf0
+
+pkgname = ros-kinetic-rqt-service-caller
+

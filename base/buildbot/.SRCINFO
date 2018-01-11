@@ -1,0 +1,62 @@
+pkgbase = buildbot
+	pkgver = 0.9.10
+	pkgrel = 2
+	url = http://buildbot.net
+	arch = any
+	license = GPL
+	makedepends = python-pip
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot/buildbot-0.9.10-py2.py3-none-any.whl
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot_www/buildbot_www-0.9.10-py2.py3-none-any.whl
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot_worker/buildbot_worker-0.9.10-py2.py3-none-any.whl
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot_waterfall_view/buildbot_waterfall_view-0.9.10-py2.py3-none-any.whl
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot_console_view/buildbot_console_view-0.9.10-py2.py3-none-any.whl
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot_grid_view/buildbot_grid_view-0.9.10-py2.py3-none-any.whl
+	source = https://files.pythonhosted.org/packages/py2.py3/b/buildbot_wsgi_dashboards/buildbot_wsgi_dashboards-0.9.10-py2.py3-none-any.whl
+	md5sums = 2a2f68e97833df644e2c163f46b1b216
+	md5sums = 43a4c3130784f52ec7deac85543bfa03
+	md5sums = ece991c3729ccab010a8a5c3a89708a3
+	md5sums = 52003403feb1833d2df9ea1d93c4d3d9
+	md5sums = d1f2dd2929697b1ceb96a7647db91f13
+	md5sums = 04e5424e36bdb20128d8949d5366841f
+	md5sums = 56a7b64094f84951ba1503cb3f3472a3
+
+pkgname = buildbot
+	pkgdesc = The Continuous Integration Framework
+	depends = python-twisted
+	depends = python-jinja
+	depends = python-migrate
+	depends = python-dateutil
+	depends = python-sqlparse
+	depends = python-pyjwt
+	depends = python-autobahn
+	depends = python-txaio
+	depends = python-future
+	depends = python-zope-interface
+	depends = python-tempita
+	depends = python-distro
+
+pkgname = python-buildbot-www
+	pkgdesc = Buildbot UI
+	depends = buildbot
+
+pkgname = buildbot-worker
+	pkgdesc = Buildbot Worker Daemon
+	depends = python-twisted
+	depends = python-future
+
+pkgname = python-buildbot-waterfall-view
+	pkgdesc = Buildbot Waterfall View plugin
+	depends = buildbot
+
+pkgname = python-buildbot-console-view
+	pkgdesc = Buildbot Console View plugin
+	depends = buildbot
+
+pkgname = python-buildbot-grid-view
+	pkgdesc = Buildbot Grid View plugin
+	depends = buildbot
+
+pkgname = python-buildbot-wsgi-dashboards
+	pkgdesc = Buildbot plugin to integrate flask or bottle dashboards to buildbot UI
+	depends = buildbot
+

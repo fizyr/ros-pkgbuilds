@@ -1,0 +1,51 @@
+# Maintainer: Sven Schneider <archlinux.sandmann@googlemail.com>
+
+pkgname=ompl
+pkgver=1.3.1
+pkgrel=7
+pkgdesc="The Open Motion Planning Library (OMPL) consists of many state-of-the-art sampling-based motion planning algorithms"
+arch=('i686' 'x86_64')
+url="http://ompl.kavrakilab.org/"
+license=('BSD')
+replaces=('ros-indigo-ompl')
+depends=('boost-libs' 'python' 'python-matplotlib' 'ode')
+makedepends=( 'mercurial' 'boost' 'cmake' 'eigen')
+source=("https://bitbucket.org/ompl/ompl/downloads/$pkgname-$pkgver-Source.tar.gz")
+sha512sums=('SKIP')
+
+_dir="ompl-$pkgver-Source"
+
+prepare() {
+  cd "$srcdir"
+
+  rm -rf build
+  mkdir build
+}
+
+build() {
+  cd "$srcdir/build"
+
+  cmake "$srcdir/$_dir" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DCMAKE_CXX_FLAGS=-D_POSIX_VERSION \
+    -DOMPL_REGISTRATION=Off
+  make
+}
+
+check() {
+  cd "${srcdir}/build"
+
+  #make test
+}
+
+
+package() {
+  cd "$srcdir/$_dir"
+
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+
+  cd "$srcdir/build"
+  make DESTDIR="$pkgdir" install
+}

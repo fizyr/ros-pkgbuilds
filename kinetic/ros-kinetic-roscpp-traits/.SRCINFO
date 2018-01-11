@@ -1,0 +1,17 @@
+pkgbase = ros-kinetic-roscpp-traits
+	pkgdesc = ROS - roscpp_traits contains the message traits code as described in MessagesTraits.
+	pkgver = 0.6.7
+	pkgrel = 1
+	url = http://ros.org/wiki/roscpp_traits
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-cpp-common
+	depends = ros-kinetic-rostime
+	source = ros-kinetic-roscpp-traits-0.6.7-0.tar.gz::https://github.com/ros-gbp/roscpp_core-release/archive/release/kinetic/roscpp_traits/0.6.7-0.tar.gz
+	sha256sums = 27fbae829e420d24bc865128bc7da7c579de315179b633bc49badb3a19446aa0
+
+pkgname = ros-kinetic-roscpp-traits
+

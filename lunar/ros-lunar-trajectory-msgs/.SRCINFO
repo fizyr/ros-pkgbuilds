@@ -1,0 +1,20 @@
+pkgbase = ros-lunar-trajectory-msgs
+	pkgdesc = ROS - This package defines messages for defining robot trajectories.
+	pkgver = 1.12.5
+	pkgrel = 1
+	url = http://wiki.ros.org/trajectory_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-lunar-catkin
+	depends = ros-lunar-geometry-msgs
+	depends = ros-lunar-message-generation
+	depends = ros-lunar-message-runtime
+	depends = ros-lunar-rosbag-migration-rule
+	depends = ros-lunar-std-msgs
+	source = ros-lunar-trajectory-msgs-1.12.5-0.tar.gz::https://github.com/ros-gbp/common_msgs-release/archive/release/lunar/trajectory_msgs/1.12.5-0.tar.gz
+	sha256sums = c74d34ca19beabfb781de82c0c89643a59a2bc7561a31d57067e6184d624ea24
+
+pkgname = ros-lunar-trajectory-msgs
+
